@@ -32,14 +32,25 @@ img { max-width: 100%; display: block; }
   justify-content: space-between;
   gap: 28px;
   padding: 7px 12px;
-  background: rgba(255,253,248,.80);
-  border: 1px solid rgba(255,255,255,.58);
+  background: rgba(255,253,248,.10);
+  border: 1px solid rgba(255,255,255,.14);
   border-radius: 999px;
-  backdrop-filter: blur(14px);
-  box-shadow: 0 5px 20px rgba(0,0,0,.055);
+  backdrop-filter: blur(3px);
+  box-shadow: none;
+  transition:
+    background .28s ease,
+    border-color .28s ease,
+    backdrop-filter .28s ease,
+    box-shadow .28s ease;
+}
+.site-header.scrolled {
+  background: rgba(255,253,248,.92);
+  border-color: rgba(255,255,255,.72);
+  backdrop-filter: blur(16px);
+  box-shadow: 0 7px 24px rgba(0,0,0,.08);
 }
 .brand { text-decoration: none; }
-.brand img { width: 170px; height: 56px; object-fit: contain; }
+.brand img { width: 200px; height: 62px; object-fit: contain; }
 .main-nav { display: flex; gap: 24px; align-items: center; padding-right: 10px; }
 .main-nav a {
   text-decoration: none;
@@ -255,7 +266,7 @@ h3 { margin: 0 0 8px; font-size: 1.25rem; }
 
 @media (max-width: 720px) {
   .site-header { inset: 10px 12px auto; }
-  .brand img { width: 145px; height: 48px; }
+  .brand img { width: 170px; height: 52px; }
   .hero { min-height: 92svh; }
   .hero-art img { object-position: center 52%; }
   .hero-overlay { background: linear-gradient(180deg, rgba(0,0,0,.02) 26%, rgba(4,41,35,.5) 100%); }

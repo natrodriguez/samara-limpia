@@ -32,10 +32,10 @@ img { max-width: 100%; display: block; }
   justify-content: space-between;
   gap: 28px;
   padding: 7px 12px;
-  background: rgba(255,253,248,.10);
-  border: 1px solid rgba(255,255,255,.14);
+  background: transparent;
+  border: 1px solid transparent;
   border-radius: 999px;
-  backdrop-filter: blur(3px);
+  backdrop-filter: none;
   box-shadow: none;
   transition:
     background .28s ease,

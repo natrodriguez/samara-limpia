@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Guía comunitaria de residuos, reciclaje y eventos ambientales en Sámara, Costa Rica.">
+  <title>Sámara Limpia</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Sámara Limpia, inicio">
+      <span class="brand-wordmark">SÁMARA LIMPIA</span>
+    </a>
+    <button class="menu-button" aria-expanded="false" aria-controls="main-nav">Menú</button>
+    <nav id="main-nav" class="main-nav" aria-label="Navegación principal">
+      <a href="#guia">Guía de residuos</a>
+      <a href="#reciclaje">Reciclaje</a>
+      <a href="#eventos">Eventos</a>
+      <a href="#comunidad">Comunidad</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-art" aria-hidden="true"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <div class="hero-mark" aria-label="Sámara Limpia">
+          <span class="hero-sun">☀</span>
+          <strong>SÁMARA</strong>
+          <span>LIMPIA</span>
+        </div>
+        <p>Información clara para cuidar nuestra comunidad, nuestras calles y nuestro mar.</p>
+        <a class="button button-primary" href="#buscador">¿Dónde boto esto?</a>
+      </div>
+    </section>
+
+    <section class="section intro" id="guia">
+      <p class="eyebrow">Guía rápida</p>
+      <h1>Separar bien es más fácil cuando sabemos qué hacer con cada residuo.</h1>
+      <div class="category-grid">
+        <article class="category-card card-yellow">
+          <span class="category-icon">●</span>
+          <h2>Basura ordinaria</h2>
+          <p>Residuos domésticos que no se pueden reciclar ni compostar.</p>
+          <a href="#buscador">Ver guía →</a>
+        </article>
+        <article class="category-card card-blue">
+          <span class="category-icon">↻</span>
+          <h2>Reciclaje</h2>
+          <p>Qué recibe el programa local y cómo preparar cada material.</p>
+          <a href="#reciclaje">Ver reciclaje →</a>
+        </article>
+        <article class="category-card card-green">
+          <span class="category-icon">✦</span>
+          <h2>Orgánicos y jardín</h2>
+          <p>Compost, restos de comida, hojas, ramas y poda.</p>
+          <a href="#buscador">Ver opciones →</a>
+        </article>
+        <article class="category-card card-coral">
+          <span class="category-icon">＋</span>
+          <h2>Residuos especiales</h2>
+          <p>Electrónicos, muebles, baterías, aceite, escombros y más.</p>
+          <a href="#buscador">Encontrar destino →</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section waste-finder" id="buscador">
+      <div class="section-heading">
+        <p class="eyebrow">Buscador de residuos</p>
+        <h2>¿Qué necesitas desechar?</h2>
+        <p>Escribe un objeto o selecciona una opción frecuente.</p>
+      </div>
+      <div class="finder-shell">
+        <label class="search-label" for="waste-search">Buscar residuo</label>
+        <input id="waste-search" class="search-input" type="search" placeholder="Ej. colchón, botella, batería…">
+        <div class="quick-chips" aria-label="Ejemplos">
+          <button data-query="botella">Botellas</button>
+          <button data-query="cartón">Cartón</button>
+          <button data-query="comida">Restos de comida</button>
+          <button data-query="ramas">Ramas</button>
+          <button data-query="colchón">Colchón</button>
+          <button data-query="batería">Baterías</button>
+          <button data-query="electrónicos">Electrónicos</button>
+          <button data-query="escombros">Escombros</button>
+        </div>
+        <div id="finder-results" class="finder-results" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="section split-section" id="reciclaje">
+      <div>
+        <p class="eyebrow">Reciclaje en Sámara</p>
+        <h2>Verlo ayuda a entenderlo.</h2>
+        <p>Esta sección puede mostrar fotos reales del centro de reciclaje: qué materiales reciben, cuáles rechazan y cómo prepararlos antes de entregarlos.</p>
+        <a class="text-link" href="#">Ver qué se recicla →</a>
+      </div>
+      <div class="photo-placeholder">
+        <span>Próximamente:</span>
+        <strong>Fotos del centro de reciclaje</strong>
+      </div>
+    </section>
+
+    <section class="section events" id="eventos">
+      <div class="section-heading">
+        <p class="eyebrow">Calendario</p>
+        <h2>Próximos eventos</h2>
+        <p>Recolección, limpiezas de playa, restauración de corales, siembra y actividades comunitarias.</p>
+      </div>
+      <div class="event-grid">
+        <article class="event-card">
+          <time><strong>—</strong><span>FECHA</span></time>
+          <div><span class="tag">Reciclaje</span><h3>Próxima recolección</h3><p>Agrega aquí el calendario confirmado.</p></div>
+        </article>
+        <article class="event-card">
+          <time><strong>—</strong><span>FECHA</span></time>
+          <div><span class="tag">Voluntariado</span><h3>Limpieza de playa</h3><p>Actividad comunitaria por publicar.</p></div>
+        </article>
+        <article class="event-card">
+          <time><strong>—</strong><span>FECHA</span></time>
+          <div><span class="tag">Ambiente</span><h3>Actividad ambiental</h3><p>Corales, árboles u otra iniciativa local.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section community" id="comunidad">
+      <div class="section-heading">
+        <p class="eyebrow">Nuestra comunidad</p>
+        <h2>Proyectos que hacen de Sámara un lugar mejor.</h2>
+      </div>
+      <div class="community-grid">
+        <article><h3>Corales Sámara</h3><p>Restauración y educación marina.</p></article>
+        <article><h3>PATA Rescue Center</h3><p>Rescate, bienestar y adopción animal.</p></article>
+        <article><h3>ADI Sámara</h3><p>Desarrollo e iniciativas comunitarias.</p></article>
+        <article><h3>CREAR</h3><p>Educación y programas para niños y jóvenes.</p></article>
+      </div>
+    </section>
+
+    <section class="section social">
+      <div>
+        <p class="eyebrow">Instagram</p>
+        <h2>Noticias y actividades de Sámara Limpia.</h2>
+        <p>Podemos conectar aquí la cuenta de Instagram o mostrar una selección de publicaciones sin depender de un servicio de pago.</p>
+      </div>
+      <a class="button button-outline" href="#" aria-label="Instagram de Sámara Limpia">Ver Instagram</a>
+    </section>
+  </main>
+
+  <footer class="footer" id="contacto">
+    <div class="footer-logo">SÁMARA LIMPIA</div>
+    <p>Proyecto comunitario independiente · Sámara, Costa Rica</p>
+    <nav aria-label="Enlaces del pie">
+      <a href="#guia">Guía</a>
+      <a href="#eventos">Eventos</a>
+      <a href="#comunidad">Comunidad</a>
+      <a href="mailto:hola@samaralimpia.org">Contacto</a>
+    </nav>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

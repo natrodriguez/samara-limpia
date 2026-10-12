@@ -40,3 +40,10 @@ document.querySelectorAll('[data-query]').forEach(button => {
     input.focus();
   });
 });
+
+const siteHeader = document.querySelector('.site-header');
+function updateHeaderOnScroll() {
+  siteHeader?.classList.toggle('scrolled', window.scrollY > 24);
+}
+updateHeaderOnScroll();
+window.addEventListener('scroll', updateHeaderOnScroll, { passive: true });

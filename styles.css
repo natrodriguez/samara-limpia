@@ -227,14 +227,14 @@ h3 { margin: 0 0 8px; font-size: 1.25rem; }
   border-color: rgba(18,61,53,.22);
 }
 .community-logo-wrap {
-  height: 132px;
+  height: 170px;
   display: grid;
   place-items: center;
   margin-bottom: 18px;
 }
 .community-logo-wrap img {
-  width: 150px;
-  height: 96px;
+  width: 200px;
+  height: 146px;
   object-fit: contain;
 }
 .community-card p {

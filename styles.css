@@ -203,6 +203,32 @@ h3 { margin: 0 0 8px; font-size: 1.25rem; }
   border-radius: 24px;
   background: white;
 }
+.event-card-featured {
+  border-color: #f1c3ca;
+  background: #fff7f8;
+}
+.event-organizer {
+  margin: -2px 0 14px;
+  font-weight: 800;
+  color: rgba(18,61,53,.78);
+}
+.event-details {
+  display: grid;
+  gap: 4px;
+  margin: 10px 0 16px;
+}
+.event-details p {
+  margin: 0;
+}
+.event-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+}
+.event-actions a {
+  font-weight: 850;
+  color: var(--ocean);
+}
 .event-card time { display: grid; align-content: start; text-align: center; }
 .event-card time strong { font-size: 2rem; }
 .event-card time span { font-size: .7rem; font-weight: 900; letter-spacing: .1em; }

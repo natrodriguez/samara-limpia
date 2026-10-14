@@ -7,7 +7,8 @@ menuButton?.addEventListener('click', () => {
 });
 
 const waste = [
-  { terms: ['botella','botellas','pet','plástico','plastico'], title: 'Botellas PET', where: 'Reciclaje', note: 'Vacía, enjuaga y seca. Verifica que el programa local acepte el tipo de plástico.' },
+  { terms: ['vidrio quebrado','vidrio roto','cristal quebrado'], title: 'Vidrio quebrado', where: 'Basura ordinaria', note: 'Envuélvelo bien en cartón, mételo en una bolsa, rotúlala claramente “VIDRIO” y colócala con la basura ordinaria.' },
+  { terms: ['botella','botellas','pet','plástico','plastico'], title: 'Botellas y envases plásticos', where: 'Reciclaje', note: 'Entrégalos vacíos, limpios, secos y sin olores.' },
   { terms: ['cartón','carton','papel','libro','libros'], title: 'Cartón, papel y libros', where: 'Reciclaje', note: 'Entrégalos limpios y secos. Evita material húmedo o contaminado con comida.' },
   { terms: ['comida','orgánico','organico','compost'], title: 'Restos de comida', where: 'Compost / orgánicos', note: 'No deben mezclarse con reciclaje. Consulta las opciones locales de compostaje.' },
   { terms: ['ramas','hojas','poda','jardín','jardin'], title: 'Ramas y poda', where: 'Residuos de jardín', note: 'No deben dejarse con la basura ordinaria sin confirmar el sistema de recolección correspondiente.' },
@@ -24,11 +25,13 @@ function renderResults(query) {
   const q = query.trim().toLowerCase();
   if (!q) { results.innerHTML = ''; return; }
   const hits = waste.filter(item => item.terms.some(term => term.includes(q) || q.includes(term)));
-  if (!hits.length) {
+  const exactSafetyHit = hits.find(item => item.title === 'Vidrio quebrado');
+  const finalHits = exactSafetyHit ? [exactSafetyHit] : hits;
+  if (!finalHits.length) {
     results.innerHTML = '<div class="result"><strong>Aún no está en la guía.</strong><span>Podemos agregar este residuo a la base de datos y verificar su destino local.</span></div>';
     return;
   }
-  results.innerHTML = hits.map(item => '<div class="result"><strong>' + item.title + ' → ' + item.where + '</strong><span>' + item.note + '</span></div>').join('');
+  results.innerHTML = finalHits.map(item => '<div class="result"><strong>' + item.title + ' → ' + item.where + '</strong><span>' + item.note + '</span></div>').join('');
 }
 
 input?.addEventListener('input', e => renderResults(e.target.value));

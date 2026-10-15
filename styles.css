@@ -5,6 +5,14 @@
   --leaf: #1f7a45;
   --sun: #ffd33d;
   --coral: #f24f65;
+  --trash-card: #E3C65A;
+  --recycle-card: #AEE4E5;
+  --organic-card: #B9D98B;
+  --special-card: #F1C3A8;
+  --trash-soft: #F8F0CF;
+  --recycle-soft: #E7F7F7;
+  --organic-soft: #EDF6DE;
+  --special-soft: #FBE7DC;
   --cream: #fffaf0;
   --paper: #fffdf8;
   --line: rgba(18,61,53,.15);
@@ -158,19 +166,19 @@ h3 { margin: 0 0 8px; font-size: 1.25rem; }
   max-width: 24ch;
 }
 .card-yellow {
-  background-color: #E3C65A;
+  background-color: var(--trash-card);
   background-image: url("assets/card-basura.webp");
 }
 .card-blue {
-  background-color: #AEE4E5;
+  background-color: var(--recycle-card);
   background-image: url("assets/card-reciclaje.webp");
 }
 .card-green {
-  background-color: #B9D98B;
+  background-color: var(--organic-card);
   background-image: url("assets/card-organicos.webp");
 }
 .card-coral {
-  background-color: #F1C3A8;
+  background-color: var(--special-card);
   background-image: url("assets/card-especiales.webp");
 }
 
@@ -419,7 +427,10 @@ h3 { margin: 0 0 8px; font-size: 1.25rem; }
 
 
 .recycling-story {
-  padding-top: 34px;
+  padding: 58px 46px 62px;
+  margin-top: 34px;
+  border-radius: 36px;
+  background: #F4FBFB;
 }
 .story-grid {
   display: grid;
@@ -576,7 +587,10 @@ h3 { margin: 0 0 8px; font-size: 1.25rem; }
 
 
 .ordinary-trash {
-  padding-top: 38px;
+  padding: 58px 46px 62px;
+  margin-top: 34px;
+  border-radius: 36px;
+  background: var(--trash-soft);
 }
 .trash-heading {
   display: grid;
@@ -592,7 +606,7 @@ h3 { margin: 0 0 8px; font-size: 1.25rem; }
   gap: 5px;
   padding: 24px 26px;
   border-radius: 26px;
-  background: #ffe684;
+  background: var(--trash-card);
   box-shadow: var(--shadow);
 }
 .schedule-label {
@@ -631,12 +645,12 @@ h3 { margin: 0 0 8px; font-size: 1.25rem; }
   letter-spacing: -.025em;
 }
 .guide-panel-yes {
-  background: #edf7e8;
-  border-color: #cfe5c8;
+  background: #F3E8AD;
+  border-color: #E2D07A;
 }
 .guide-panel-no {
-  background: #fff1ec;
-  border-color: #f2d2c6;
+  background: #FFF8E6;
+  border-color: #EADFBF;
 }
 .rule-list {
   margin: 0;
@@ -690,7 +704,10 @@ h3 { margin: 0 0 8px; font-size: 1.25rem; }
 
 
 .recycling-guide {
-  padding-top: 38px;
+  padding: 58px 46px 62px;
+  margin-top: 34px;
+  border-radius: 36px;
+  background: var(--recycle-soft);
 }
 .recycling-heading {
   display: grid;
@@ -706,7 +723,7 @@ h3 { margin: 0 0 8px; font-size: 1.25rem; }
   gap: 12px;
   padding: 24px 26px;
   border-radius: 26px;
-  background: #a6e7f2;
+  background: var(--recycle-card);
   box-shadow: var(--shadow);
 }
 .schedule-row {
@@ -731,22 +748,28 @@ h3 { margin: 0 0 8px; font-size: 1.25rem; }
   align-items: start;
 }
 .recycling-how {
-  background: #eefbfc;
-  border-color: #cce9ed;
+  background: #F5FCFC;
+  border-color: #CFEAEA;
 }
 .recycling-yes {
-  background: #edf7e8;
-  border-color: #cfe5c8;
+  background: #D9F1F1;
+  border-color: #B7DEDF;
 }
 .recycling-no {
-  background: #fff1ec;
-  border-color: #f2d2c6;
+  background: #F7FBFB;
+  border-color: #CFE6E6;
 }
 .recycling-materials-list li {
   margin-bottom: 11px;
 }
+.ordinary-trash .finder-cta {
+  background: #FFF8E6;
+  border-color: #E6D79B;
+}
 .recycling-finder-cta {
   margin-top: 20px;
+  background: #DDF3F3;
+  border-color: #B8DEDF;
 }
 .recycling-story-link {
   display: inline-block;
@@ -775,5 +798,15 @@ h3 { margin: 0 0 8px; font-size: 1.25rem; }
   }
   .recycling-how {
     grid-column: auto;
+  }
+}
+
+@media (max-width: 720px) {
+  .ordinary-trash,
+  .recycling-guide,
+  .recycling-story {
+    width: min(100% - 28px, 1160px);
+    padding: 42px 20px 46px;
+    border-radius: 28px;
   }
 }

@@ -645,12 +645,12 @@ h3 { margin: 0 0 8px; font-size: 1.25rem; }
   letter-spacing: -.025em;
 }
 .guide-panel-yes {
-  background: #F3E8AD;
-  border-color: #E2D07A;
+  background: #F4FAF1;
+  border-color: #CFE5C8;
 }
 .guide-panel-no {
-  background: #FFF8E6;
-  border-color: #EADFBF;
+  background: #FFF5F2;
+  border-color: #F2D2C6;
 }
 .rule-list {
   margin: 0;
@@ -748,16 +748,16 @@ h3 { margin: 0 0 8px; font-size: 1.25rem; }
   align-items: start;
 }
 .recycling-how {
-  background: #F5FCFC;
-  border-color: #CFEAEA;
+  background: rgba(255,255,255,.92);
+  border-color: var(--recycle-card);
 }
 .recycling-yes {
-  background: #D9F1F1;
-  border-color: #B7DEDF;
+  background: #F4FAF1;
+  border-color: #CFE5C8;
 }
 .recycling-no {
-  background: #F7FBFB;
-  border-color: #CFE6E6;
+  background: #FFF5F2;
+  border-color: #F2D2C6;
 }
 .recycling-materials-list li {
   margin-bottom: 11px;
@@ -809,4 +809,9 @@ h3 { margin: 0 0 8px; font-size: 1.25rem; }
     padding: 42px 20px 46px;
     border-radius: 28px;
   }
+}
+
+.ordinary-trash .trash-guide-grid .guide-panel:first-child {
+  background: rgba(255,255,255,.94);
+  border-color: var(--trash-card);
 }

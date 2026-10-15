@@ -125,20 +125,54 @@ h3 { margin: 0 0 8px; font-size: 1.25rem; }
 
 .category-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; margin-top: 40px; }
 .category-card {
-  min-height: 260px;
+  min-height: 390px;
   padding: 26px;
   border-radius: var(--radius);
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   box-shadow: var(--shadow);
+  text-decoration: none;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 100% auto;
+  overflow: hidden;
+  transition: transform .2s ease, box-shadow .2s ease;
 }
-.category-card p { flex: 1; }
-.category-card a { font-weight: 900; text-decoration: none; }
-.category-icon { font-size: 2rem; }
-.card-yellow { background: #ffe684; }
-.card-blue { background: #a6e7f2; }
-.card-green { background: #bde7b1; }
-.card-coral { background: #ffc0c8; }
+.category-card:hover,
+.category-card:focus-visible {
+  transform: translateY(-3px);
+  box-shadow: 0 24px 65px rgba(18,61,53,.16);
+}
+.category-copy {
+  position: relative;
+  z-index: 1;
+  max-width: 95%;
+}
+.category-card h2 {
+  font-size: clamp(1.7rem, 2.3vw, 2.3rem);
+  margin-bottom: 10px;
+}
+.category-card p {
+  margin: 0;
+  max-width: 24ch;
+}
+.card-yellow {
+  background-color: #E3C65A;
+  background-image: url("assets/card-basura.webp");
+}
+.card-blue {
+  background-color: #AEE4E5;
+  background-image: url("assets/card-reciclaje.webp");
+}
+.card-green {
+  background-color: #B9D98B;
+  background-image: url("assets/card-organicos.webp");
+}
+.card-coral {
+  background-color: #F1C3A8;
+  background-image: url("assets/card-especiales.webp");
+}
 
 .waste-finder { padding-top: 40px; }
 .finder-shell {
@@ -328,7 +362,10 @@ h3 { margin: 0 0 8px; font-size: 1.25rem; }
   .hero-logo { width: min(265px, 72vw); max-height: 175px; }
   .section { width: min(100% - 28px, 1160px); padding: 68px 0; }
   .category-grid, .community-grid { grid-template-columns: 1fr; }
-  .category-card { min-height: 210px; }
+  .category-card {
+    min-height: 430px;
+    background-size: 100% auto;
+  }
   .finder-shell { padding: 18px; border-radius: 24px; }
   .social { width: calc(100% - 28px); padding: 28px; flex-direction: column; align-items: flex-start; }
 }

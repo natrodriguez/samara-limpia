@@ -13,6 +13,7 @@
   --recycle-soft: #E7F7F7;
   --organic-soft: #EDF6DE;
   --special-soft: #FBE7DC;
+  --info-soft: #F1EDE3;
   --cream: #fffaf0;
   --paper: #fffdf8;
   --line: rgba(18,61,53,.15);
@@ -590,7 +591,7 @@ h3 { margin: 0 0 8px; font-size: 1.25rem; }
   padding: 58px 46px 62px;
   margin-top: 34px;
   border-radius: 36px;
-  background: var(--trash-soft);
+  background: var(--info-soft);
 }
 .trash-heading {
   display: grid;
@@ -645,11 +646,11 @@ h3 { margin: 0 0 8px; font-size: 1.25rem; }
   letter-spacing: -.025em;
 }
 .guide-panel-yes {
-  background: #F4FAF1;
+  background: var(--info-soft);
   border-color: #CFE5C8;
 }
 .guide-panel-no {
-  background: #FFF5F2;
+  background: var(--info-soft);
   border-color: #F2D2C6;
 }
 .rule-list {
@@ -763,8 +764,11 @@ h3 { margin: 0 0 8px; font-size: 1.25rem; }
   margin-bottom: 11px;
 }
 .ordinary-trash .finder-cta {
-  background: #FFF8E6;
-  border-color: #E6D79B;
+  background: var(--info-soft);
+  border-color: #DDD4C3;
+}
+.ordinary-trash .finder-cta .button-primary {
+  background: var(--trash-card);
 }
 .recycling-finder-cta {
   margin-top: 20px;
@@ -812,6 +816,6 @@ h3 { margin: 0 0 8px; font-size: 1.25rem; }
 }
 
 .ordinary-trash .trash-guide-grid .guide-panel:first-child {
-  background: rgba(255,255,255,.94);
+  background: var(--info-soft);
   border-color: var(--trash-card);
 }

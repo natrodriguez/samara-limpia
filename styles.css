@@ -432,7 +432,7 @@ h3 { margin: 0 0 8px; font-size: 1.25rem; }
   padding: 58px 46px 62px;
   margin-top: 34px;
   border-radius: 36px;
-  background: #F4FBFB;
+  background: var(--recycle-soft);
 }
 .story-grid {
   display: grid;
@@ -543,8 +543,8 @@ h3 { margin: 0 0 8px; font-size: 1.25rem; }
   gap: 16px;
 }
 .reject-panel {
-  background: #f5f1e8;
-  border: 1px solid #e5ddcd;
+  background: var(--panel-soft);
+  border: 1px solid #DDD4C3;
 }
 .reject-photo {
   order: 0;

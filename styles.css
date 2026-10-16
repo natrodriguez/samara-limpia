@@ -14,6 +14,7 @@
   --organic-soft: #EDF6DE;
   --special-soft: #FBE7DC;
   --info-soft: #F1EDE3;
+  --panel-soft: rgb(254, 250, 242);
   --cream: #fffaf0;
   --paper: #fffdf8;
   --line: rgba(18,61,53,.15);
@@ -607,7 +608,7 @@ h3 { margin: 0 0 8px; font-size: 1.25rem; }
   gap: 5px;
   padding: 24px 26px;
   border-radius: 26px;
-  background: var(--trash-card);
+  background: var(--sun);
   box-shadow: var(--shadow);
 }
 .schedule-label {
@@ -646,11 +647,11 @@ h3 { margin: 0 0 8px; font-size: 1.25rem; }
   letter-spacing: -.025em;
 }
 .guide-panel-yes {
-  background: var(--info-soft);
+  background: var(--panel-soft);
   border-color: #CFE5C8;
 }
 .guide-panel-no {
-  background: var(--info-soft);
+  background: var(--panel-soft);
   border-color: #F2D2C6;
 }
 .rule-list {
@@ -724,7 +725,7 @@ h3 { margin: 0 0 8px; font-size: 1.25rem; }
   gap: 12px;
   padding: 24px 26px;
   border-radius: 26px;
-  background: var(--recycle-card);
+  background: var(--sun);
   box-shadow: var(--shadow);
 }
 .schedule-row {
@@ -749,31 +750,34 @@ h3 { margin: 0 0 8px; font-size: 1.25rem; }
   align-items: start;
 }
 .recycling-how {
-  background: rgba(255,255,255,.92);
-  border-color: var(--recycle-card);
+  background: var(--panel-soft);
+  border-color: #B9DDE0;
 }
 .recycling-yes {
-  background: #F4FAF1;
+  background: var(--panel-soft);
   border-color: #CFE5C8;
 }
 .recycling-no {
-  background: #FFF5F2;
+  background: var(--panel-soft);
   border-color: #F2D2C6;
 }
 .recycling-materials-list li {
   margin-bottom: 11px;
 }
 .ordinary-trash .finder-cta {
-  background: var(--info-soft);
-  border-color: #DDD4C3;
+  background: var(--panel-soft);
+  border-color: #D8C997;
 }
 .ordinary-trash .finder-cta .button-primary {
-  background: var(--trash-card);
+  background: var(--sun);
 }
 .recycling-finder-cta {
   margin-top: 20px;
-  background: #DDF3F3;
-  border-color: #B8DEDF;
+  background: var(--panel-soft);
+  border-color: #B9DDE0;
+}
+.recycling-finder-cta .button-primary {
+  background: var(--sun);
 }
 .recycling-story-link {
   display: inline-block;
@@ -816,6 +820,6 @@ h3 { margin: 0 0 8px; font-size: 1.25rem; }
 }
 
 .ordinary-trash .trash-guide-grid .guide-panel:first-child {
-  background: var(--info-soft);
-  border-color: var(--trash-card);
+  background: var(--panel-soft);
+  border-color: #D8C997;
 }

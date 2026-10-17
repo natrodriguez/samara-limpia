@@ -441,10 +441,17 @@ h3 { margin: 0 0 8px; font-size: 1.25rem; }
   fill: currentColor;
   stroke: none;
 }
-.footer-instagram {
+.footer-instagram,
+.footer-facebook {
   display: inline-flex;
   align-items: center;
-  gap: 7px;
+  justify-content: center;
+}
+
+.footer-facebook svg {
+  width: 19px;
+  height: 19px;
+  fill: currentColor;
 }
 
 .footer {

@@ -1263,3 +1263,65 @@ h3 { margin: 0 0 8px; font-size: 1.25rem; }
     border-radius: 28px;
   }
 }
+
+
+.raee-local {
+  margin-top: 20px;
+  padding: 26px;
+  border-radius: 26px;
+  background: var(--paper);
+  border: 1px solid #B9DDE0;
+}
+.raee-local-heading {
+  max-width: 820px;
+  margin-bottom: 20px;
+}
+.raee-local-heading h3 {
+  font-size: clamp(1.6rem, 2.5vw, 2.25rem);
+  line-height: 1.08;
+  margin: 0 0 12px;
+  letter-spacing: -.025em;
+}
+.raee-local-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+.raee-point {
+  padding: 20px;
+  border-radius: 20px;
+  background: var(--recycle-soft);
+  border: 1px solid #C8E7E8;
+}
+.raee-place {
+  display: inline-block;
+  margin-bottom: 8px;
+  font-size: .74rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--ocean);
+}
+.raee-point h4 {
+  margin: 0 0 10px;
+  font-size: 1.18rem;
+}
+.raee-point p {
+  margin: 0;
+}
+.raee-note {
+  margin-top: 10px !important;
+}
+.raee-map-link {
+  display: inline-block;
+  margin-top: 18px;
+}
+
+@media (max-width: 720px) {
+  .raee-local-grid {
+    grid-template-columns: 1fr;
+  }
+  .raee-local {
+    padding: 20px;
+  }
+}

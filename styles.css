@@ -291,7 +291,7 @@ h3 { margin: 0 0 8px; font-size: 1.25rem; }
   padding: 22px;
   border: 1px solid #DDD4C3;
   border-radius: 24px;
-  background: var(--panel-soft);
+  background: var(--paper);
 }
 .event-card time {
   width: fit-content;
@@ -614,7 +614,7 @@ h3 { margin: 0 0 8px; font-size: 1.25rem; }
   gap: 16px;
 }
 .reject-panel {
-  background: var(--panel-soft);
+  background: var(--paper);
   border: 1px solid #DDD4C3;
 }
 .reject-photo {
@@ -718,11 +718,11 @@ h3 { margin: 0 0 8px; font-size: 1.25rem; }
   letter-spacing: -.025em;
 }
 .guide-panel-yes {
-  background: var(--panel-soft);
+  background: var(--paper);
   border-color: #CFE5C8;
 }
 .guide-panel-no {
-  background: var(--panel-soft);
+  background: var(--paper);
   border-color: #F2D2C6;
 }
 .rule-list {
@@ -821,22 +821,22 @@ h3 { margin: 0 0 8px; font-size: 1.25rem; }
   align-items: start;
 }
 .recycling-how {
-  background: var(--panel-soft);
+  background: var(--paper);
   border-color: #B9DDE0;
 }
 .recycling-yes {
-  background: var(--panel-soft);
+  background: var(--paper);
   border-color: #CFE5C8;
 }
 .recycling-no {
-  background: var(--panel-soft);
+  background: var(--paper);
   border-color: #F2D2C6;
 }
 .recycling-materials-list li {
   margin-bottom: 11px;
 }
 .ordinary-trash .finder-cta {
-  background: var(--panel-soft);
+  background: var(--paper);
   border-color: #D8C997;
 }
 .ordinary-trash .finder-cta .button-primary {
@@ -844,7 +844,7 @@ h3 { margin: 0 0 8px; font-size: 1.25rem; }
 }
 .recycling-finder-cta {
   margin-top: 20px;
-  background: var(--panel-soft);
+  background: var(--paper);
   border-color: #B9DDE0;
 }
 .recycling-finder-cta .button-primary {
@@ -891,7 +891,7 @@ h3 { margin: 0 0 8px; font-size: 1.25rem; }
 }
 
 .ordinary-trash .trash-guide-grid .guide-panel:first-child {
-  background: var(--panel-soft);
+  background: var(--paper);
   border-color: #D8C997;
 }
 
@@ -927,7 +927,7 @@ h3 { margin: 0 0 8px; font-size: 1.25rem; }
   margin-top: 28px;
   padding: 24px 26px;
   border-radius: 26px;
-  background: var(--panel-soft);
+  background: var(--paper);
   border: 1px solid #E7C8B9;
 }
 .organics-warning h3,
@@ -953,7 +953,7 @@ h3 { margin: 0 0 8px; font-size: 1.25rem; }
   position: relative;
   padding: 28px 26px 26px;
   border-radius: 26px;
-  background: var(--panel-soft);
+  background: var(--paper);
   border: 1px solid #CBDDB8;
 }
 .option-number {
@@ -987,7 +987,7 @@ h3 { margin: 0 0 8px; font-size: 1.25rem; }
   align-items: center;
   justify-content: space-between;
   gap: 28px;
-  background: var(--panel-soft);
+  background: var(--paper);
   border: 1px solid #CBDDB8;
 }
 .organics-tip > div {

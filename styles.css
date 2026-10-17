@@ -1025,3 +1025,19 @@ h3 { margin: 0 0 8px; font-size: 1.25rem; }
     border-radius: 28px;
   }
 }
+
+
+.events {
+  padding: 58px 46px 62px;
+  margin-top: 34px;
+  border-radius: 36px;
+  background: #f1ede3;
+}
+
+@media (max-width: 720px) {
+  .events {
+    width: min(100% - 28px, 1160px);
+    padding: 42px 20px 46px;
+    border-radius: 28px;
+  }
+}

@@ -157,7 +157,7 @@ Object.assign(translations.es, {
   compostRule3:'Mantén aireación y humedad; cubre los restos de comida dentro de la pila.',
   compostRule4:'En una pila abierta evita carne, pescado, huesos, lácteos, grasas y aceites, que atraen animales.',
   homeCompostManual:'Ver Manual de Compostaje Domiciliario para Costa Rica ↗',
-  biofuturaLink:'Ver composteras de Biofutura Costa Rica ↗',
+  biofuturaLink:'Compostera giratoria de doble cámara ↗',
   trashEyebrow:'Basura ordinaria',
   trashTitle:'Lo que va en la bolsa de basura.',
   trashIntro:'Residuos domésticos que no se pueden reciclar ni compostar.',
@@ -345,7 +345,7 @@ Object.assign(translations.en, {
   compostRule3:'Maintain airflow and moisture; cover food scraps within the pile.',
   compostRule4:'In an open pile, avoid meat, fish, bones, dairy, fats and oils, which attract animals.',
   homeCompostManual:'See the Home Composting Manual for Costa Rica ↗',
-  biofuturaLink:'See Biofutura Costa Rica tumbling composters ↗',
+  biofuturaLink:'Double-chamber tumbling composter ↗',
 
   recMat1:'<strong>Cardboard:</strong> flattened, clean and free of plastic. Tie it with string or place it in a bag.',
   recMat2:'<strong>Paper:</strong> notebook pages, books and magazines, clean and dry.',

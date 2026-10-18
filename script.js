@@ -213,7 +213,48 @@ Object.assign(translations.es, {
   crearText:'Educación y programas para niños y jóvenes.'
 });
 
+
+Object.assign(translations.es, {
+  recMat1:'<strong>Cartón:</strong> aplanado, limpio y sin plástico. Átalo con cuerda o colócalo en una bolsa.',
+  recMat2:'<strong>Papel:</strong> hojas de cuadernos, libros y revistas, limpio y seco.',
+  recMat3:'<strong>Tetra Pak:</strong> enjuagado y aplastado.',
+  recMat4:'<strong>Envases plásticos:</strong> PET y otros envases aceptados por el programa, vacíos, sin restos de líquidos ni olores.',
+  recMat5:'<strong>Botellas plásticas:</strong> vacías, limpias y secas.',
+  recMat6:'<strong>Latón:</strong> por ejemplo, latas de atún y otros envases metálicos.',
+  recMat7:'<strong>Latas de pintura vacías:</strong> si tuvieron pintura, debe estar completamente seca.',
+  recMat8:'<strong>Botellas de vidrio:</strong> de todos los colores y formas, limpias, secas y sin quebrar.',
+  recMat9:'<strong>Vidrio plano:</strong> entero, como ventanas; no parabrisas.',
+  recMat10:'<strong>Bolsas plásticas:</strong> preferiblemente transparentes. Júntalas dentro de una sola bolsa y no las mezcles con otros materiales.',
+  recMat11:'<strong>Latas de aluminio:</strong> como latas de bebidas.',
+  recNo1:'Objetos sueltos.',
+  recNo2:'Objetos tan grandes que no puedan colocarse de forma segura en una bolsa o prepararse según las indicaciones del programa.',
+  recNo3:'<strong>Vidrio quebrado.</strong> No se recicla. Envuélvelo bien en cartón, mételo en una bolsa, rotúlalo claramente <strong>“VIDRIO”</strong> y ponlo con la basura ordinaria.',
+  recNo4:'Estereofón (de cajas de comida, empaques, láminas).',
+  recNo5:'Cajas de pizza sucias.',
+  recNo6:'<strong>Residuos especiales:</strong> muebles, electrodomésticos, ventiladores, inodoros, lavatorios, colchones, motores, objetos grandes, aparatos electrónicos, computadoras, juguetes, escombros, etc.',
+  recNo7:'Materiales sucios, mojados o con restos de comida, líquidos u olores fuertes.'
+});
+
 Object.assign(translations.en, {
+
+  recMat1:'<strong>Cardboard:</strong> flattened, clean and free of plastic. Tie it with string or place it in a bag.',
+  recMat2:'<strong>Paper:</strong> notebook pages, books and magazines, clean and dry.',
+  recMat3:'<strong>Tetra Pak:</strong> rinsed and flattened.',
+  recMat4:'<strong>Plastic containers:</strong> PET and other containers accepted by the program, empty and free of liquid residue or odors.',
+  recMat5:'<strong>Plastic bottles:</strong> empty, clean and dry.',
+  recMat6:'<strong>Metal cans:</strong> for example tuna cans and other metal containers.',
+  recMat7:'<strong>Empty paint cans:</strong> any remaining paint must be completely dry.',
+  recMat8:'<strong>Glass bottles:</strong> all colors and shapes, clean, dry and unbroken.',
+  recMat9:'<strong>Flat glass:</strong> intact, such as window glass; no windshields.',
+  recMat10:'<strong>Plastic bags:</strong> preferably transparent. Put them together inside one bag and do not mix them with other materials.',
+  recMat11:'<strong>Aluminum cans:</strong> such as beverage cans.',
+  recNo1:'Loose items.',
+  recNo2:'Items too large to be placed safely in a bag or prepared according to the program instructions.',
+  recNo3:'<strong>Broken glass.</strong> It is not recycled. Wrap it securely in cardboard, place it in a bag, label it clearly <strong>“GLASS”</strong>, and put it with regular trash.',
+  recNo4:'Styrofoam (food containers, packaging and sheets).',
+  recNo5:'Dirty pizza boxes.',
+  recNo6:'<strong>Special waste:</strong> furniture, appliances, fans, toilets, sinks, mattresses, motors, large objects, electronics, computers, toys, construction debris, etc.',
+  recNo7:'Dirty or wet materials, or items with food residue, liquids or strong odors.',
   trashEyebrow:'Regular trash',
   trashTitle:'What goes in the trash bag.',
   trashIntro:'Household waste that cannot be recycled or composted.',

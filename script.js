@@ -206,7 +206,9 @@ menuButton?.addEventListener('click', () => {
   menuButton.setAttribute('aria-expanded', open ? 'true' : 'false');
 });
 
-const waste = wasteBilingual;\n\nconst input = document.querySelector('#waste-search');
+const waste = wasteBilingual;
+
+const input = document.querySelector('#waste-search');
 const results = document.querySelector('#finder-results');
 
 function renderResults(query) {

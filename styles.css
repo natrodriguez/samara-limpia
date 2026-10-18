@@ -468,11 +468,55 @@ h3 { margin: 0 0 8px; font-size: 1.25rem; }
 .footer a { color: white; }
 
 @media (max-width: 900px) {
+  .language-switch {
+    position: absolute;
+    top: 10px;
+    right: 78px;
+    z-index: 3;
+  }
   .category-grid, .community-grid { grid-template-columns: repeat(2, 1fr); }
   .event-grid { grid-template-columns: 1fr; }
   .event-announcement { grid-template-columns: 1fr; }
   .announcement-date { min-height: 92px; }
-  .main-nav {
+  
+.language-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: 4px;
+  padding: 3px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.88);
+  box-shadow: 0 4px 16px rgba(18,61,53,.12);
+  backdrop-filter: blur(10px);
+}
+
+.lang-button {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: var(--ink);
+  min-width: 34px;
+  height: 30px;
+  padding: 0 9px;
+  border-radius: 999px;
+  font: inherit;
+  font-weight: 800;
+  font-size: .76rem;
+  letter-spacing: .04em;
+  cursor: pointer;
+}
+
+.lang-button:hover,
+.lang-button:focus-visible {
+  background: rgba(255,211,61,.38);
+}
+
+.lang-button.active {
+  background: var(--sun);
+}
+
+.main-nav {
     display: none;
     position: absolute;
     top: 68px;

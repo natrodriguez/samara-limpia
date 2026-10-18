@@ -14,22 +14,26 @@
     <a class="brand" href="#inicio" aria-label="Sámara Limpia, inicio">
       <img src="assets/logo.png" alt="Sámara Limpia">
     </a>
-    <button class="menu-button" aria-expanded="false" aria-controls="main-nav">Menú</button>
+    <button class="menu-button" aria-expanded="false" aria-controls="main-nav" data-i18n="menu">Menú</button>
     <nav id="main-nav" class="main-nav" aria-label="Navegación principal">
-      <a href="#guia">Guía de residuos</a>
-      <a href="#reciclaje">Reciclaje</a>
-      <a href="#rutas">Rutas</a>
-      <a href="#eventos">Eventos</a>
-      <a href="#comunidad">Comunidad</a>
-      <a href="#contacto">Contacto</a>
+      <a href="#guia" data-i18n="navGuide">Guía de residuos</a>
+      <a href="#reciclaje" data-i18n="navRecycle">Reciclaje</a>
+      <a href="#rutas" data-i18n="navRoutes">Rutas</a>
+      <a href="#eventos" data-i18n="footerEvents">Eventos</a>
+      <a href="#comunidad" data-i18n="footerCommunity">Comunidad</a>
+      <a href="#contacto" data-i18n="navContact">Contacto</a>
       <a class="finder-nav-link" href="#buscador" aria-label="Ir al buscador de residuos">
         <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
           <circle cx="11" cy="11" r="6.5"></circle>
           <path d="M16 16l4.2 4.2"></path>
         </svg>
-        <span>Dónde boto…</span>
+        <span data-i18n="navFinder">Dónde boto…</span>
       </a>
     </nav>
+    <div class="language-switch" role="group" aria-label="Idioma / Language">
+      <button type="button" class="lang-button active" data-lang="es" aria-pressed="true">ES</button>
+      <button type="button" class="lang-button" data-lang="en" aria-pressed="false">EN</button>
+    </div>
   </header>
 
   <main>
@@ -42,31 +46,31 @@
     </section>
 
     <section class="section intro" id="guia">
-      <p class="eyebrow">Guía rápida</p>
-      <h1>Separar bien es más fácil cuando sabemos qué hacer con cada residuo.</h1>
+      <p class="eyebrow" data-i18n="quickGuide">Guía rápida</p>
+      <h1 data-i18n="introTitle">Separar bien es más fácil cuando sabemos qué hacer con cada residuo.</h1>
       <div class="category-grid">
         <a class="category-card card-yellow card-basura" href="#basura-ordinaria">
           <div class="category-copy">
-            <h2>Basura ordinaria</h2>
-            <p>Residuos domésticos que no se pueden reciclar ni compostar.</p>
+            <h2 data-i18n="cardTrashTitle">Basura ordinaria</h2>
+            <p data-i18n="cardTrashText">Residuos domésticos que no se pueden reciclar ni compostar.</p>
           </div>
         </a>
         <a class="category-card card-blue card-reciclaje" href="#reciclaje">
           <div class="category-copy">
-            <h2>Reciclaje</h2>
-            <p>Qué recibe el programa local y cómo preparar cada material.</p>
+            <h2 data-i18n="cardRecycleTitle">Reciclaje</h2>
+            <p data-i18n="cardRecycleText">Qué recibe el programa local y cómo preparar cada material.</p>
           </div>
         </a>
         <a class="category-card card-green card-organicos" href="#organicos">
           <div class="category-copy">
-            <h2>Orgánicos y jardín</h2>
-            <p>Compost, restos de comida, hojas, ramas y poda.</p>
+            <h2 data-i18n="cardOrganicTitle">Orgánicos y jardín</h2>
+            <p data-i18n="cardOrganicText">Compost, restos de comida, hojas, ramas y poda.</p>
           </div>
         </a>
         <a class="category-card card-coral card-especiales" href="#especiales">
           <div class="category-copy">
-            <h2>Residuos especiales</h2>
-            <p>Electrónicos, muebles, baterías, aceite, escombros y más.</p>
+            <h2 data-i18n="cardSpecialTitle">Residuos especiales</h2>
+            <p data-i18n="cardSpecialText">Electrónicos, muebles, baterías, aceite, escombros y más.</p>
           </div>
         </a>
       </div>
@@ -75,8 +79,8 @@
     
     <section class="section facts-section" id="datos">
       <div class="section-heading">
-        <p class="eyebrow">Datos que importan</p>
-        <h2>El problema es grande. También lo es nuestro potencial para reducirlo.</h2>
+        <p class="eyebrow" data-i18n="factsEyebrow">Datos que importan</p>
+        <h2 data-i18n="factsTitle">El problema es grande. También lo es nuestro potencial para reducirlo.</h2>
       </div>
 
       <div class="facts-grid">
@@ -167,22 +171,22 @@
 
     <section class="section waste-finder" id="buscador">
       <div class="section-heading">
-        <p class="eyebrow">Buscador de residuos</p>
-        <h2>¿Qué necesitas desechar?</h2>
-        <p>Escribe un objeto o selecciona una opción frecuente.</p>
+        <p class="eyebrow" data-i18n="finderEyebrow">Buscador de residuos</p>
+        <h2 data-i18n="finderTitle">¿Qué necesitas desechar?</h2>
+        <p data-i18n="finderIntro">Escribe un objeto o selecciona una opción frecuente.</p>
       </div>
       <div class="finder-shell">
-        <label class="search-label" for="waste-search">Buscar residuo</label>
-        <input id="waste-search" class="search-input" type="search" placeholder="Ej. colchón, botella, batería…">
+        <label class="search-label" for="waste-search" data-i18n="finderLabel">Buscar residuo</label>
+        <input id="waste-search" class="search-input" type="search" placeholder="Ej. colchón, botella, batería…" data-i18n-placeholder="finderPlaceholder">
         <div class="quick-chips" aria-label="Ejemplos">
-          <button data-query="botella">Botellas</button>
-          <button data-query="cartón">Cartón</button>
-          <button data-query="comida">Restos de comida</button>
-          <button data-query="ramas">Ramas</button>
-          <button data-query="colchón">Colchón</button>
-          <button data-query="batería">Baterías</button>
-          <button data-query="electrónicos">Electrónicos</button>
-          <button data-query="escombros">Escombros</button>
+          <button data-query-es="botella" data-query-en="bottle" data-i18n="chipBottles">Botellas</button>
+          <button data-query-es="cartón" data-query-en="cardboard" data-i18n="chipCardboard">Cartón</button>
+          <button data-query-es="comida" data-query-en="food scraps" data-i18n="chipFood">Restos de comida</button>
+          <button data-query-es="ramas" data-query-en="branches" data-i18n="chipBranches">Ramas</button>
+          <button data-query-es="colchón" data-query-en="mattress" data-i18n="chipMattress">Colchón</button>
+          <button data-query-es="batería" data-query-en="battery" data-i18n="chipBatteries">Baterías</button>
+          <button data-query-es="electrónicos" data-query-en="electronics" data-i18n="chipElectronics">Electrónicos</button>
+          <button data-query-es="escombros" data-query-en="construction debris" data-i18n="chipDebris">Escombros</button>
         </div>
         <div id="finder-results" class="finder-results" aria-live="polite"></div>
       </div>
@@ -585,8 +589,8 @@
 
     <section class="section routes-section" id="rutas">
       <div class="section-heading">
-        <p class="eyebrow">Rutas de recolección</p>
-        <h2>¿Pasa la recolección por tu calle?</h2>
+        <p class="eyebrow" data-i18n="routesEyebrow">Rutas de recolección</p>
+        <h2 data-i18n="routesTitle">¿Pasa la recolección por tu calle?</h2>
         <p>Este mapa ilustrado ofrece una guía visual general de las rutas de recolección en Sámara. Para consultar el mapa oficial y ver el trazado con mayor detalle, utiliza la referencia de la Municipalidad de Nicoya.</p>
       </div>
 
@@ -603,9 +607,9 @@
 
     <section class="section events" id="eventos">
       <div class="section-heading">
-        <p class="eyebrow">Calendario</p>
-        <h2>Próximos eventos</h2>
-        <p>Actividades ambientales, educativas y comunitarias para participar, aprender y apoyar.</p>
+        <p class="eyebrow" data-i18n="eventsEyebrow">Calendario</p>
+        <h2 data-i18n="eventsTitle">Próximos eventos</h2>
+        <p data-i18n="eventsIntro">Actividades ambientales, educativas y comunitarias para participar, aprender y apoyar.</p>
       </div>
 
       <article class="event-announcement">
@@ -678,8 +682,8 @@
 
     <section class="section community" id="comunidad">
       <div class="section-heading">
-        <p class="eyebrow">Nuestra comunidad</p>
-        <h2>Proyectos que hacen de Sámara un lugar mejor.</h2>
+        <p class="eyebrow" data-i18n="communityEyebrow">Nuestra comunidad</p>
+        <h2 data-i18n="communityTitle">Proyectos que hacen de Sámara un lugar mejor.</h2>
       </div>
         <p class="community-intro">Conoce, apoya o únete a las personas y organizaciones que trabajan cada día por Sámara. Nuestra comunidad enfrenta muchos desafíos, pero todos podemos ser parte de la solución. Con tu tiempo, tus ideas, tu apoyo o tu participación, tú también puedes hacer la diferencia.</p>
       <div class="community-grid">
@@ -712,15 +716,15 @@
       </a>
       <div class="instagram-copy">
         <p class="eyebrow">Instagram</p>
-        <h2>Sigue a @samaralimpia.</h2>
-        <p>Noticias, actividades e información útil para separar mejor, reducir residuos y cuidar nuestra comunidad.</p>
+        <h2 data-i18n="instagramTitle">Sigue a @samaralimpia.</h2>
+        <p data-i18n="instagramText">Noticias, actividades e información útil para separar mejor, reducir residuos y cuidar nuestra comunidad.</p>
         <a class="button button-outline instagram-button" href="https://www.instagram.com/samaralimpia/" target="_blank" rel="noopener noreferrer" aria-label="Abrir Instagram de Sámara Limpia">
           <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
             <rect x="3.5" y="3.5" width="17" height="17" rx="5"></rect>
             <circle cx="12" cy="12" r="4"></circle>
             <circle cx="17.4" cy="6.7" r="1"></circle>
           </svg>
-          <span>Ver @samaralimpia</span>
+          <span data-i18n="instagramButton">Ver @samaralimpia</span>
         </a>
       </div>
     </section>
@@ -729,11 +733,11 @@
   <footer class="footer" id="contacto">
     <img src="assets/logo.png" alt="Sámara Limpia">
     <div class="footer-info">
-      <p>Proyecto comunitario independiente · Sámara, Guanacaste</p>
-      <p>Contacto: <a href="mailto:samaralimpia@gmail.com">samaralimpia@gmail.com</a></p>
+      <p data-i18n="footerProject">Proyecto comunitario independiente · Sámara, Guanacaste</p>
+      <p><span data-i18n="contactLabel">Contacto</span>: <a href="mailto:samaralimpia@gmail.com">samaralimpia@gmail.com</a></p>
     </div>
     <nav aria-label="Enlaces del pie">
-      <a href="#guia">Guía</a>
+      <a href="#guia" data-i18n="footerGuide">Guía</a>
       <a href="#eventos">Eventos</a>
       <a href="#comunidad">Comunidad</a>
       <a class="footer-instagram" href="https://www.instagram.com/samaralimpia/" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Sámara Limpia" title="Instagram">

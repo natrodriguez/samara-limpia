@@ -104,6 +104,27 @@ const translations = {
 
 Object.assign(translations.es, {
 
+  eventAllOctoberAria:'Durante todo octubre',
+  eventAll:'TODO',
+  eventOctober:'OCTUBRE',
+  event1Tag:'Conservación',
+  event1Title:'Retos y oportunidades para la conservación de murciélagos en Costa Rica',
+  event1Time:'<strong>9:00 a. m. · Virtual</strong>',
+  event1Platform:'YouTube Onda UNED y Facebook Live del Centro de Educación Ambiental - UNED.',
+  event1Text:'Conversatorio sobre la importancia ecológica de los murciélagos y los desafíos para su conservación.',
+  viewPost:'Ver publicación ↗',
+  event2Tag:'Educación ambiental',
+  event2Title:'Plásticos invisibles: impactos visibles',
+  event2Organizer:'Centro de Educación Ambiental · UNED',
+  event2Time:'<strong>10:00 a. m. · Zoom</strong>',
+  event2Text:'Charla sobre los microplásticos, sus efectos en los ecosistemas y cómo nuestras acciones pueden marcar la diferencia.',
+  viewPostAccess:'Ver publicación e información de acceso ↗',
+  event3Tag:'Bienestar animal',
+  event3Title:'Campaña de Castración de Perros y Gatos',
+  event3Time:'<strong>9:00 a.m. a 2:00 p.m. · Salón Comunal de Sámara</strong>',
+  event3Price:'₡15.000 y ₡20.000 para animales de 19 a 24 kg.',
+  scheduleWhatsApp:'Agendar por WhatsApp',
+
   bulky1:'Muebles, colchones y otros objetos voluminosos.',
   bulky2:'Chatarra y metales.',
   bulky3:'Electrodomésticos y línea blanca.',
@@ -323,6 +344,27 @@ Object.assign(translations.es, {
 });
 
 Object.assign(translations.en, {
+
+  eventAllOctoberAria:'Throughout October',
+  eventAll:'ALL',
+  eventOctober:'OCTOBER',
+  event1Tag:'Conservation',
+  event1Title:'Challenges and opportunities for bat conservation in Costa Rica',
+  event1Time:'<strong>9:00 a.m. · Virtual</strong>',
+  event1Platform:'YouTube Onda UNED and Facebook Live from the UNED Environmental Education Center.',
+  event1Text:'A discussion on the ecological importance of bats and the challenges involved in their conservation.',
+  viewPost:'View post ↗',
+  event2Tag:'Environmental education',
+  event2Title:'Invisible plastics: visible impacts',
+  event2Organizer:'Environmental Education Center · UNED',
+  event2Time:'<strong>10:00 a.m. · Zoom</strong>',
+  event2Text:'A talk about microplastics, their effects on ecosystems and how our actions can make a difference.',
+  viewPostAccess:'View post and access information ↗',
+  event3Tag:'Animal welfare',
+  event3Title:'Dog and Cat Spay/Neuter Campaign',
+  event3Time:'<strong>9:00 a.m. to 2:00 p.m. · Sámara Community Hall</strong>',
+  event3Price:'₡15,000 and ₡20,000 for animals weighing 19 to 24 kg.',
+  scheduleWhatsApp:'Schedule via WhatsApp',
 
   bulky1:'Furniture, mattresses and other bulky items.',
   bulky2:'Scrap metal and metals.',
@@ -614,6 +656,11 @@ function applyLanguage(lang) {
   document.querySelectorAll('[data-i18n-html]').forEach(el => {
     const key = el.dataset.i18nHtml;
     if (translations[lang][key]) el.innerHTML = translations[lang][key];
+  });
+
+  document.querySelectorAll('[data-i18n-aria]').forEach(el => {
+    const key = el.dataset.i18nAria;
+    if (translations[lang][key]) el.setAttribute('aria-label', translations[lang][key]);
   });
 
   document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {

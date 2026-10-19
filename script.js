@@ -596,7 +596,7 @@ Object.assign(translations.en, {
   recMat11:'<strong>Aluminum cans:</strong> such as beverage cans.',
   recNo1:'Loose items.',
   recNo2:'Items too large to be placed safely in a bag or prepared according to the program instructions.',
-  recNo3:'<strong>Broken glass.</strong> It is not recycled. Wrap it securely in cardboard, place it in a bag, label it clearly <strong>“GLASS”</strong>, and put it with regular trash.',
+  recNo3:'<strong>Broken glass.</strong> It is not recycled. Wrap it securely in cardboard, place it in a bag, label it clearly <strong>“VIDRIO”</strong>, and put it with regular trash.',
   recNo4:'Styrofoam (food containers, packaging and sheets).',
   recNo5:'Dirty pizza boxes.',
   recNo6:'<strong>Special waste:</strong> furniture, appliances, fans, toilets, sinks, mattresses, motors, large objects, electronics, computers, toys, construction debris, etc.',
@@ -726,7 +726,7 @@ const wasteBilingual = [
   {
     terms: ['vidrio quebrado','vidrio roto','cristal quebrado','broken glass','glass shard','shattered glass'],
     es: { title:'Vidrio quebrado', where:'Basura ordinaria', note:'Envuélvelo bien en cartón, mételo en una bolsa, rotúlala claramente “VIDRIO” y colócala con la basura ordinaria.' },
-    en: { title:'Broken glass', where:'Regular trash', note:'Wrap it securely in cardboard, place it in a bag, label it clearly “GLASS,” and put it with regular trash.' }
+    en: { title:'Broken glass', where:'Regular trash', note:'Wrap it securely in cardboard, place it in a bag, label it clearly “VIDRIO,” and put it with regular trash.' }
   },
   {
     terms: ['botella','botellas','pet','plástico','plastico','bottle','bottles','plastic'],

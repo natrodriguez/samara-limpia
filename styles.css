@@ -1257,6 +1257,16 @@ h3 { margin: 0 0 8px; font-size: 1.25rem; }
 .fact-card p {
   margin: 0;
 }
+.fact-card .fact-extra {
+  margin-top: 12px;
+  font-weight: 800;
+}
+.fact-source-inline {
+  display: block;
+  margin-top: 8px;
+  font-size: .76rem;
+  color: rgba(18,61,53,.62);
+}
 .facts-source {
   margin: 16px 0 0;
   font-size: .84rem;

@@ -1,5 +1,31 @@
 const translations = {
   es: {
+
+    skipToContent: 'Saltar al contenido',
+    brandHome: 'Sámara Limpia, inicio',
+    mainNavLabel: 'Navegación principal',
+    finderNavAria: 'Ir al buscador de residuos',
+    examplesAria: 'Ejemplos',
+    trashScheduleAria: 'Horario de recolección de basura ordinaria',
+    recyclingScheduleAria: 'Horario de recolección de reciclaje',
+    directoryChecklistAria: 'Información que se verificará para cada recolector',
+    visitCoralesAria: 'Visitar Proyecto Corales Sámara',
+    visitPataAria: 'Visitar PATA Sámara Animal Rescue',
+    visitAdiAria: 'Visitar Asociación de Desarrollo Integral de Sámara en Facebook',
+    visitCrearAria: 'Visitar Asociación CREAR',
+    visitInstagramAria: 'Visitar @samaralimpia en Instagram',
+    openInstagramAria: 'Abrir Instagram de Sámara Limpia',
+    footerInstagramAria: 'Instagram de Sámara Limpia',
+    footerFacebookAria: 'Facebook de Sámara Limpia',
+    footerNavAria: 'Enlaces del pie',
+    instagramTitleAttr: 'Instagram',
+    facebookTitleAttr: 'Facebook',
+    altCenterEntrance: 'Entrada del Centro de acopio de residuos sólidos valorizables de la Municipalidad de Nicoya',
+    altRecyclingTruck: 'Camión de reciclaje llegando al centro de acopio',
+    altManualSorting: 'Trabajadores realizando selección manual de materiales reciclables',
+    altBrokenGlassWorker: 'Trabajador mostrando el peligro del vidrio quebrado durante la clasificación manual',
+    altRouteMap: 'Mapa ilustrado de las rutas de recolección en Sámara',
+    altInstagramPost: 'Sámara Limpia en Instagram: juntos por una Sámara más limpia',
     menu: 'Menú',
     navGuide: 'Guía de residuos',
     navRecycle: 'Reciclaje',
@@ -52,6 +78,32 @@ const translations = {
     reportUpdate: 'Reportar una actualización ↗'
   },
   en: {
+
+    skipToContent: 'Skip to content',
+    brandHome: 'Sámara Limpia, home',
+    mainNavLabel: 'Main navigation',
+    finderNavAria: 'Go to the waste finder',
+    examplesAria: 'Examples',
+    trashScheduleAria: 'Regular trash collection schedule',
+    recyclingScheduleAria: 'Recycling collection schedule',
+    directoryChecklistAria: 'Information verified for each collector',
+    visitCoralesAria: 'Visit Proyecto Corales Sámara',
+    visitPataAria: 'Visit PATA Sámara Animal Rescue',
+    visitAdiAria: 'Visit the Sámara Development Association on Facebook',
+    visitCrearAria: 'Visit Asociación CREAR',
+    visitInstagramAria: 'Visit @samaralimpia on Instagram',
+    openInstagramAria: 'Open Sámara Limpia on Instagram',
+    footerInstagramAria: 'Sámara Limpia on Instagram',
+    footerFacebookAria: 'Sámara Limpia on Facebook',
+    footerNavAria: 'Footer links',
+    instagramTitleAttr: 'Instagram',
+    facebookTitleAttr: 'Facebook',
+    altCenterEntrance: 'Entrance to the Municipality of Nicoya recyclable materials recovery center',
+    altRecyclingTruck: 'Recycling truck arriving at the recovery center',
+    altManualSorting: 'Workers manually sorting recyclable materials',
+    altBrokenGlassWorker: 'Worker showing the danger of broken glass during manual sorting',
+    altRouteMap: 'Illustrated map of collection routes in Sámara',
+    altInstagramPost: 'Sámara Limpia on Instagram: together for a cleaner Sámara',
     menu: 'Menu',
     navGuide: 'Waste guide',
     navRecycle: 'Recycling',
@@ -704,6 +756,16 @@ function applyLanguage(lang) {
     if (translations[lang][key]) el.setAttribute('aria-label', translations[lang][key]);
   });
 
+  document.querySelectorAll('[data-i18n-alt]').forEach(el => {
+    const key = el.dataset.i18nAlt;
+    if (translations[lang][key]) el.setAttribute('alt', translations[lang][key]);
+  });
+
+  document.querySelectorAll('[data-i18n-title]').forEach(el => {
+    const key = el.dataset.i18nTitle;
+    if (translations[lang][key]) el.setAttribute('title', translations[lang][key]);
+  });
+
   document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
     const key = el.dataset.i18nPlaceholder;
     if (translations[lang][key]) el.setAttribute('placeholder', translations[lang][key]);
@@ -735,6 +797,21 @@ const nav = document.querySelector('.main-nav');
 menuButton?.addEventListener('click', () => {
   const open = nav.classList.toggle('open');
   menuButton.setAttribute('aria-expanded', open ? 'true' : 'false');
+});
+
+nav?.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    nav.classList.remove('open');
+    menuButton?.setAttribute('aria-expanded', 'false');
+  });
+});
+
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && nav?.classList.contains('open')) {
+    nav.classList.remove('open');
+    menuButton?.setAttribute('aria-expanded', 'false');
+    menuButton?.focus();
+  }
 });
 
 const waste = wasteBilingual;

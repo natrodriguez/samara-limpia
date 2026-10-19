@@ -25,6 +25,7 @@ const translations = {
     altPataLogo: 'Logo de PATA Sámara Animal Rescue',
     altAdiLogo: 'Logo de la Asociación de Desarrollo Integral de Sámara',
     altCrearLogo: 'Logo de Asociación CREAR',
+    altMonosVivosLogo: 'Logo de Monos Vivos Sámara',
 
     skipToContent: 'Saltar al contenido',
     brandHome: 'Sámara Limpia, inicio',
@@ -38,6 +39,7 @@ const translations = {
     visitPataAria: 'Visitar PATA Sámara Animal Rescue',
     visitAdiAria: 'Visitar Asociación de Desarrollo Integral de Sámara en Facebook',
     visitCrearAria: 'Visitar Asociación CREAR',
+    visitMonosVivosAria: 'Visitar Monos Vivos Sámara en Facebook',
     visitInstagramAria: 'Visitar @samaralimpia en Instagram',
     openInstagramAria: 'Abrir Instagram de Sámara Limpia',
     footerInstagramAria: 'Instagram de Sámara Limpia',
@@ -128,6 +130,7 @@ const translations = {
     altPataLogo: 'PATA Sámara Animal Rescue logo',
     altAdiLogo: 'Sámara Development Association logo',
     altCrearLogo: 'Asociación CREAR logo',
+    altMonosVivosLogo: 'Monos Vivos Sámara logo',
 
     skipToContent: 'Skip to content',
     brandHome: 'Sámara Limpia, home',
@@ -141,6 +144,7 @@ const translations = {
     visitPataAria: 'Visit PATA Sámara Animal Rescue',
     visitAdiAria: 'Visit the Sámara Development Association on Facebook',
     visitCrearAria: 'Visit Asociación CREAR',
+    visitMonosVivosAria: 'Visit Monos Vivos Sámara on Facebook',
     visitInstagramAria: 'Visit @samaralimpia on Instagram',
     openInstagramAria: 'Open Sámara Limpia on Instagram',
     footerInstagramAria: 'Sámara Limpia on Instagram',
@@ -438,7 +442,8 @@ Object.assign(translations.es, {
   coralesText:'Restauración y educación marina.',
   pataText:'Rescate, bienestar y adopción animal.',
   adiText:'Desarrollo e iniciativas comunitarias.',
-  crearText:'Educación y programas para niños y jóvenes.'
+  crearText:'Educación y programas para niños y jóvenes.',
+  monosVivosText:'Haciendo que Sámara sea un lugar más seguro para los monos y otros animales salvajes. 🐒'
 });
 
 
@@ -712,7 +717,8 @@ Object.assign(translations.en, {
   coralesText:'Marine restoration and education.',
   pataText:'Animal rescue, welfare and adoption.',
   adiText:'Community development and local initiatives.',
-  crearText:'Education and programs for children and young people.'
+  crearText:'Education and programs for children and young people.',
+  monosVivosText:'Making Sámara safer for monkeys and other wildlife. 🐒'
 });
 
 const finderMessages = {

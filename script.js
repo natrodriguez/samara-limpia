@@ -275,7 +275,7 @@ Object.assign(translations.es, {
   raeePlace4:'Nicoya y Hojancha',
   raeeGollo:'<strong>Recibe:</strong> refrigeradores y aire acondicionado; electrodomésticos grandes y pequeños; lámparas; pantallas y monitores; computadoras, portátiles, celulares y tabletas.',
 
-  fact1Label:'se recupera actualmente',
+  fact1Label:'solo se recicla',
   fact1Text:'de los residuos generados en Costa Rica, según una actualización del Ministerio de Salud publicada en enero de 2026.',
   fact2Label:'terminó sin manejo controlado',
   fact2Text:'en 2022, incluyendo prácticas como quema, entierro o disposición en lotes, ríos y otros sitios no autorizados.',
@@ -528,7 +528,7 @@ Object.assign(translations.en, {
   raeePlace4:'Nicoya and Hojancha',
   raeeGollo:'<strong>Accepts:</strong> refrigerators and air conditioners; large and small appliances; lamps; screens and monitors; computers, laptops, cell phones and tablets.',
 
-  fact1Label:'is currently recovered',
+  fact1Label:'is recycled',
   fact1Text:'of the waste generated in Costa Rica, according to a Ministry of Health update published in January 2026.',
   fact2Label:'ended up without controlled management',
   fact2Text:'in 2022, including practices such as burning, burying or disposal in lots, rivers and other unauthorized sites.',

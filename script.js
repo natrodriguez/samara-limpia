@@ -1,6 +1,23 @@
 const translations = {
   es: {
 
+    altPlasticContainers: 'Envases plásticos reciclables',
+    altTetraPak: 'Envases Tetra Pak reciclables',
+    altAluminumCans: 'Latas de aluminio reciclables',
+    altMetalCans: 'Latas metálicas reciclables',
+    altPlasticBottles: 'Botellas plásticas reciclables',
+    altGlassBottles: 'Botellas de vidrio reciclables',
+    altCardboard: 'Cartón preseleccionado para reciclaje',
+    altOtherPlastics: 'Otros envases plásticos reciclables',
+    altCompactedCardboard: 'Cartón compactado listo para transporte',
+    altCompactedPlastic: 'Plástico compactado listo para transporte',
+    altCompactedMaterials: 'Materiales reciclables compactados listos para envío',
+    altRejectedMaterial: 'Material descartado que no puede recuperarse',
+    altCoralesLogo: 'Logo de Proyecto Corales Sámara',
+    altPataLogo: 'Logo de PATA Sámara Animal Rescue',
+    altAdiLogo: 'Logo de la Asociación de Desarrollo Integral de Sámara',
+    altCrearLogo: 'Logo de Asociación CREAR',
+
     skipToContent: 'Saltar al contenido',
     brandHome: 'Sámara Limpia, inicio',
     mainNavLabel: 'Navegación principal',
@@ -78,6 +95,23 @@ const translations = {
     reportUpdate: 'Reportar una actualización ↗'
   },
   en: {
+
+    altPlasticContainers: 'Recyclable plastic containers',
+    altTetraPak: 'Recyclable Tetra Pak containers',
+    altAluminumCans: 'Recyclable aluminum cans',
+    altMetalCans: 'Recyclable metal cans',
+    altPlasticBottles: 'Recyclable plastic bottles',
+    altGlassBottles: 'Recyclable glass bottles',
+    altCardboard: 'Cardboard pre-sorted for recycling',
+    altOtherPlastics: 'Other recyclable plastic containers',
+    altCompactedCardboard: 'Compacted cardboard ready for transport',
+    altCompactedPlastic: 'Compacted plastic ready for transport',
+    altCompactedMaterials: 'Compacted recyclable materials ready for shipment',
+    altRejectedMaterial: 'Discarded material that cannot be recovered',
+    altCoralesLogo: 'Proyecto Corales Sámara logo',
+    altPataLogo: 'PATA Sámara Animal Rescue logo',
+    altAdiLogo: 'Sámara Development Association logo',
+    altCrearLogo: 'Asociación CREAR logo',
 
     skipToContent: 'Skip to content',
     brandHome: 'Sámara Limpia, home',

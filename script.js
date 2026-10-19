@@ -1,6 +1,14 @@
 const translations = {
   es: {
 
+    factsSource2026: 'Ministerio de Salud · actualización 2026 ↗',
+    factsSource2022: 'Informe de Gestión · datos 2022 ↗',
+    factsSourceRaee: 'Ministerio de Salud · RAEE 2024 ↗',
+    localInfoReviewed: 'Información local revisada: octubre 2026',
+    raeeVerified: 'Mapa oficial consultado: octubre 2026.',
+    trustStatement: 'Verificamos la información con fuentes oficiales y proveedores locales cuando es posible. Los horarios, rutas y condiciones pueden cambiar.',
+    siteReviewed: 'Última revisión general: octubre 2026.',
+
     altPlasticContainers: 'Envases plásticos reciclables',
     altTetraPak: 'Envases Tetra Pak reciclables',
     altAluminumCans: 'Latas de aluminio reciclables',
@@ -95,6 +103,14 @@ const translations = {
     reportUpdate: 'Reportar una actualización ↗'
   },
   en: {
+
+    factsSource2026: 'Ministry of Health · 2026 update ↗',
+    factsSource2022: 'Management Report · 2022 data ↗',
+    factsSourceRaee: 'Ministry of Health · e-waste 2024 ↗',
+    localInfoReviewed: 'Local information reviewed: October 2026',
+    raeeVerified: 'Official map checked: October 2026.',
+    trustStatement: 'We verify information with official sources and local providers whenever possible. Hours, routes and conditions may change.',
+    siteReviewed: 'Last general review: October 2026.',
 
     altPlasticContainers: 'Recyclable plastic containers',
     altTetraPak: 'Recyclable Tetra Pak containers',
@@ -259,14 +275,14 @@ Object.assign(translations.es, {
   raeePlace4:'Nicoya y Hojancha',
   raeeGollo:'<strong>Recibe:</strong> refrigeradores y aire acondicionado; electrodomésticos grandes y pequeños; lámparas; pantallas y monitores; computadoras, portátiles, celulares y tabletas.',
 
-  fact1Label:'se recuperó en 2022',
-  fact1Text:'de los residuos ordinarios mediante reciclaje, compostaje y coprocesamiento, frente a 9,6% en 2021.',
+  fact1Label:'se recupera actualmente',
+  fact1Text:'de los residuos generados en Costa Rica, según una actualización del Ministerio de Salud publicada en enero de 2026.',
   fact2Label:'terminó sin manejo controlado',
   fact2Text:'en 2022, incluyendo prácticas como quema, entierro o disposición en lotes, ríos y otros sitios no autorizados.',
   fact3Label:'de RAEE por persona',
   fact3Text:'fueron generados en Costa Rica en 2022. Solo alrededor del 8% fue recolectado para reciclaje.',
-  fact4Label:'es orgánico',
-  fact4Text:'según la composición estimada de los residuos ordinarios de 2021, y podría aprovecharse mediante compostaje.',
+  fact4Label:'de los residuos domésticos son orgánicos',
+  fact4Text:'y podrían aprovecharse mediante compostaje, según datos difundidos por el Ministerio de Salud en 2026.',
   sourcesLabel:'Fuentes',
   storyEyebrow:'Así funciona el reciclaje',
   storyTitle:'Del camión al centro de acopio.',
@@ -512,14 +528,14 @@ Object.assign(translations.en, {
   raeePlace4:'Nicoya and Hojancha',
   raeeGollo:'<strong>Accepts:</strong> refrigerators and air conditioners; large and small appliances; lamps; screens and monitors; computers, laptops, cell phones and tablets.',
 
-  fact1Label:'was recovered in 2022',
-  fact1Text:'of regular waste through recycling, composting and co-processing, compared with 9.6% in 2021.',
+  fact1Label:'is currently recovered',
+  fact1Text:'of the waste generated in Costa Rica, according to a Ministry of Health update published in January 2026.',
   fact2Label:'ended up without controlled management',
   fact2Text:'in 2022, including practices such as burning, burying or disposal in lots, rivers and other unauthorized sites.',
   fact3Label:'of e-waste per person',
   fact3Text:'were generated in Costa Rica in 2022. Only about 8% was collected for recycling.',
-  fact4Label:'is organic',
-  fact4Text:'based on the estimated composition of regular waste in 2021, and could potentially be recovered through composting.',
+  fact4Label:'of household waste is organic',
+  fact4Text:'and could potentially be recovered through composting, according to figures published by the Ministry of Health in 2026.',
   sourcesLabel:'Sources',
   storyEyebrow:'How recycling works',
   storyTitle:'From the truck to the recycling center.',

@@ -25,6 +25,7 @@ const translations = {
     finderIntro: 'Escribe un objeto o selecciona una opción frecuente.',
     finderLabel: 'Buscar residuo',
     finderPlaceholder: 'Ej. colchón, botella, batería…',
+    finderSeeSection: 'Ver sección →',
     chipBottles: 'Botellas',
     chipCardboard: 'Cartón',
     chipFood: 'Restos de comida',
@@ -47,7 +48,8 @@ const translations = {
     contactLabel: 'Contacto',
     footerGuide: 'Guía',
     footerEvents: 'Eventos',
-    footerCommunity: 'Comunidad'
+    footerCommunity: 'Comunidad',
+    reportUpdate: 'Reportar una actualización ↗'
   },
   en: {
     menu: 'Menu',
@@ -75,6 +77,7 @@ const translations = {
     finderIntro: 'Type an item or choose a common option.',
     finderLabel: 'Search waste',
     finderPlaceholder: 'E.g. mattress, bottle, battery…',
+    finderSeeSection: 'View section →',
     chipBottles: 'Bottles',
     chipCardboard: 'Cardboard',
     chipFood: 'Food scraps',
@@ -97,7 +100,8 @@ const translations = {
     contactLabel: 'Contact',
     footerGuide: 'Guide',
     footerEvents: 'Events',
-    footerCommunity: 'Community'
+    footerCommunity: 'Community',
+    reportUpdate: 'Report an update ↗'
   }
 };
 
@@ -338,7 +342,7 @@ Object.assign(translations.es, {
   recMat1:'<strong>Cartón:</strong> aplanado, limpio y sin plástico. Átalo con cuerda o colócalo en una bolsa.',
   recMat2:'<strong>Papel:</strong> hojas de cuadernos, libros y revistas, limpio y seco.',
   recMat3:'<strong>Tetra Pak:</strong> enjuagado y aplastado.',
-  recMat4:'<strong>Envases plásticos:</strong> PET y otros envases aceptados por el programa, vacíos, sin restos de líquidos ni olores.',
+  recMat4:'<strong>Envases plásticos:</strong> con símbolo de reciclaje, independientemente del número; vacíos, sin restos de líquidos ni olores.',
   recMat5:'<strong>Botellas plásticas:</strong> vacías, limpias y secas.',
   recMat6:'<strong>Latón:</strong> por ejemplo, latas de atún y otros envases metálicos.',
   recMat7:'<strong>Latas de pintura vacías:</strong> si tuvieron pintura, debe estar completamente seca.',
@@ -480,7 +484,7 @@ Object.assign(translations.en, {
   recMat1:'<strong>Cardboard:</strong> flattened, clean and free of plastic. Tie it with string or place it in a bag.',
   recMat2:'<strong>Paper:</strong> notebook pages, books and magazines, clean and dry.',
   recMat3:'<strong>Tetra Pak:</strong> rinsed and flattened.',
-  recMat4:'<strong>Plastic containers:</strong> PET and other containers accepted by the program, empty and free of liquid residue or odors.',
+  recMat4:'<strong>Plastic containers:</strong> with a recycling symbol, regardless of the number; empty and free of liquid residue or odors.',
   recMat5:'<strong>Plastic bottles:</strong> empty, clean and dry.',
   recMat6:'<strong>Metal cans:</strong> for example tuna cans and other metal containers.',
   recMat7:'<strong>Empty paint cans:</strong> any remaining paint must be completely dry.',
@@ -664,6 +668,19 @@ const wasteBilingual = [
   }
 ];
 
+
+const finderTargets = {
+  'Vidrio quebrado': '#basura-ordinaria',
+  'Botellas y envases plásticos': '#reciclaje',
+  'Cartón, papel y libros': '#reciclaje',
+  'Restos de comida': '#organicos',
+  'Hojas, ramas y poda': '#organicos',
+  'Muebles y colchones': '#especiales',
+  'Baterías y pilas': '#especiales',
+  'Electrónicos': '#especiales',
+  'Escombros de construcción': '#especiales'
+};
+
 let currentLanguage = localStorage.getItem('samaraLimpiaLanguage') || 'es';
 if (!['es','en'].includes(currentLanguage)) currentLanguage = 'es';
 
@@ -737,7 +754,11 @@ function renderResults(query) {
   }
   results.innerHTML = finalHits.map(item => {
     const copy = item[currentLanguage];
-    return '<div class="result"><strong>' + copy.title + ' → ' + copy.where + '</strong><span>' + copy.note + '</span></div>';
+    const target = finderTargets[item.es.title];
+    const action = target
+      ? '<a class="result-link" href="' + target + '">' + translations[currentLanguage].finderSeeSection + '</a>'
+      : '';
+    return '<div class="result"><strong>' + copy.title + ' → ' + copy.where + '</strong><span>' + copy.note + '</span>' + action + '</div>';
   }).join('');
 }
 
@@ -750,6 +771,29 @@ document.querySelectorAll('[data-query-es], [data-query-en]').forEach(button => 
     input.focus();
   });
 });
+
+
+function hideExpiredEvents() {
+  const today = new Date();
+  const localToday = [
+    today.getFullYear(),
+    String(today.getMonth() + 1).padStart(2, '0'),
+    String(today.getDate()).padStart(2, '0')
+  ].join('-');
+
+  document.querySelectorAll('[data-event-end]').forEach(event => {
+    if (event.dataset.eventEnd < localToday) event.hidden = true;
+  });
+
+  const eventsSection = document.querySelector('#eventos');
+  if (eventsSection) {
+    const hasVisibleEvents = [...eventsSection.querySelectorAll('[data-event-end]')]
+      .some(event => !event.hidden);
+    eventsSection.hidden = !hasVisibleEvents;
+  }
+}
+
+hideExpiredEvents();
 
 const siteHeader = document.querySelector('.site-header');
 function updateHeaderOnScroll() {

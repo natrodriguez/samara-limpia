@@ -275,8 +275,8 @@ Object.assign(translations.es, {
   raeePlace4:'Nicoya y Hojancha',
   raeeGollo:'<strong>Recibe:</strong> refrigeradores y aire acondicionado; electrodomésticos grandes y pequeños; lámparas; pantallas y monitores; computadoras, portátiles, celulares y tabletas.',
 
-  fact1Label:'solamente se recupera',
-  fact1Text:'de los residuos generados en Costa Rica mediante reciclaje, compostaje y otras formas de valorización.',
+  fact1Label:'de todos los residuos',
+  fact1Text:'generados en Costa Rica se recupera mediante reciclaje, compostaje y otras formas de valorización. <strong>Más del 80% termina en rellenos sanitarios.</strong>',
     fact1Daily:'El país genera más de 4.000 toneladas de residuos cada día.',
     fact1Source:'Ministerio de Salud, 2026.',
   fact2Label:'terminó sin manejo controlado',
@@ -530,8 +530,8 @@ Object.assign(translations.en, {
   raeePlace4:'Nicoya and Hojancha',
   raeeGollo:'<strong>Accepts:</strong> refrigerators and air conditioners; large and small appliances; lamps; screens and monitors; computers, laptops, cell phones and tablets.',
 
-  fact1Label:'is recovered',
-  fact1Text:'of the waste generated in Costa Rica through recycling, composting and other forms of recovery.',
+  fact1Label:'of all waste',
+  fact1Text:'generated in Costa Rica is recovered through recycling, composting and other forms of recovery. <strong>More than 80% ends up in sanitary landfills.</strong>',
     fact1Daily:'Costa Rica generates more than 4,000 tonnes of waste every day.',
     fact1Source:'Ministry of Health, 2026.',
   fact2Label:'ended up without controlled management',

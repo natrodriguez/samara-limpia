@@ -113,7 +113,20 @@ img { max-width: 100%; display: block; }
 }
 .main-nav a:hover,
 .main-nav a:focus-visible { opacity: 1; }
-.menu-button { display: none; border: 0; background: transparent; font: inherit; font-weight: 800; }
+.menu-button {
+  display: none;
+  border: 0;
+  background: transparent;
+  font: inherit;
+  font-weight: 800;
+  color: white;
+  text-shadow: 0 1px 8px rgba(0,0,0,.45);
+  transition: color .22s ease, text-shadow .22s ease;
+}
+.site-header.scrolled .menu-button {
+  color: var(--ocean);
+  text-shadow: none;
+}
 
 .hero {
   position: relative;

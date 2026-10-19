@@ -76,6 +76,29 @@
       </div>
     </section>
 
+    <section class="section waste-finder" id="buscador">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="finderEyebrow">Buscador de residuos</p>
+        <h2 data-i18n="finderTitle">¿Qué hago con esto?</h2>
+        <p data-i18n="finderIntro">Escribe un objeto o selecciona una opción frecuente.</p>
+      </div>
+      <div class="finder-shell">
+        <label class="search-label" for="waste-search" data-i18n="finderLabel">Buscar residuo</label>
+        <input id="waste-search" class="search-input" type="search" placeholder="Ej. colchón, botella, batería…" data-i18n-placeholder="finderPlaceholder">
+        <div class="quick-chips" aria-label="Ejemplos">
+          <button data-query-es="botella" data-query-en="bottle" data-i18n="chipBottles">Botellas</button>
+          <button data-query-es="cartón" data-query-en="cardboard" data-i18n="chipCardboard">Cartón</button>
+          <button data-query-es="comida" data-query-en="food scraps" data-i18n="chipFood">Restos de comida</button>
+          <button data-query-es="ramas" data-query-en="branches" data-i18n="chipBranches">Ramas</button>
+          <button data-query-es="colchón" data-query-en="mattress" data-i18n="chipMattress">Colchón</button>
+          <button data-query-es="batería" data-query-en="battery" data-i18n="chipBatteries">Baterías</button>
+          <button data-query-es="electrónicos" data-query-en="electronics" data-i18n="chipElectronics">Electrónicos</button>
+          <button data-query-es="escombros" data-query-en="construction debris" data-i18n="chipDebris">Escombros</button>
+        </div>
+        <div id="finder-results" class="finder-results" aria-live="polite"></div>
+      </div>
+    </section>
+
     
     <section class="section facts-section" id="datos">
       <div class="section-heading">
@@ -169,28 +192,7 @@
       </div>
     </section>
 
-    <section class="section waste-finder" id="buscador">
-      <div class="section-heading">
-        <p class="eyebrow" data-i18n="finderEyebrow">Buscador de residuos</p>
-        <h2 data-i18n="finderTitle">¿Qué hago con esto?</h2>
-        <p data-i18n="finderIntro">Escribe un objeto o selecciona una opción frecuente.</p>
-      </div>
-      <div class="finder-shell">
-        <label class="search-label" for="waste-search" data-i18n="finderLabel">Buscar residuo</label>
-        <input id="waste-search" class="search-input" type="search" placeholder="Ej. colchón, botella, batería…" data-i18n-placeholder="finderPlaceholder">
-        <div class="quick-chips" aria-label="Ejemplos">
-          <button data-query-es="botella" data-query-en="bottle" data-i18n="chipBottles">Botellas</button>
-          <button data-query-es="cartón" data-query-en="cardboard" data-i18n="chipCardboard">Cartón</button>
-          <button data-query-es="comida" data-query-en="food scraps" data-i18n="chipFood">Restos de comida</button>
-          <button data-query-es="ramas" data-query-en="branches" data-i18n="chipBranches">Ramas</button>
-          <button data-query-es="colchón" data-query-en="mattress" data-i18n="chipMattress">Colchón</button>
-          <button data-query-es="batería" data-query-en="battery" data-i18n="chipBatteries">Baterías</button>
-          <button data-query-es="electrónicos" data-query-en="electronics" data-i18n="chipElectronics">Electrónicos</button>
-          <button data-query-es="escombros" data-query-en="construction debris" data-i18n="chipDebris">Escombros</button>
-        </div>
-        <div id="finder-results" class="finder-results" aria-live="polite"></div>
-      </div>
-    </section>
+    
 
 
     <section class="section recycling-guide" id="reciclaje">
@@ -234,7 +236,7 @@
             <li data-i18n-html="recMat1"><strong>Cartón:</strong> aplanado, limpio y sin plástico. Átalo con cuerda o colócalo en una bolsa.</li>
             <li data-i18n-html="recMat2"><strong>Papel:</strong> hojas de cuadernos, libros y revistas, limpio y seco.</li>
             <li data-i18n-html="recMat3"><strong>Tetra Pak:</strong> enjuagado y aplastado.</li>
-            <li data-i18n-html="recMat4"><strong>Envases plásticos:</strong> PET y otros envases aceptados por el programa, vacíos, sin restos de líquidos ni olores.</li>
+            <li data-i18n-html="recMat4"><strong>Envases plásticos:</strong> con símbolo de reciclaje, independientemente del número; vacíos, sin restos de líquidos ni olores.</li>
             <li data-i18n-html="recMat5"><strong>Botellas plásticas:</strong> vacías, limpias y secas.</li>
             <li data-i18n-html="recMat6"><strong>Latón:</strong> por ejemplo, latas de atún y otros envases metálicos.</li>
             <li data-i18n-html="recMat7"><strong>Latas de pintura vacías:</strong> si tuvieron pintura, debe estar completamente seca.</li>
@@ -310,19 +312,6 @@
           <p class="eyebrow" data-i18n="storyAcceptedEyebrow">Qué sí reciben</p>
           <h3 data-i18n="storyAcceptedTitle">Materiales valorizables</h3>
           <p data-i18n="storyAcceptedText">Estos son ejemplos de materiales aceptados por el programa cuando llegan limpios, secos y correctamente separados.</p>
-          <ul class="rule-list materials-quick-list">
-            <li data-i18n="acceptedQuick1">Cartón.</li>
-            <li data-i18n="acceptedQuick2">Papel (de cuadernos, libros y revistas).</li>
-            <li data-i18n="acceptedQuick3">Envases Tetra Pak (como de leche y jugos).</li>
-            <li data-i18n="acceptedQuick4">Envases plásticos con símbolo PET de cualquier número.</li>
-            <li data-i18n="acceptedQuick5">Botellas plásticas.</li>
-            <li data-i18n="acceptedQuick6">Latón (como latas de atún).</li>
-            <li data-i18n="acceptedQuick7">Latas de pintura vacías y secas.</li>
-            <li data-i18n="acceptedQuick8">Botellas de vidrio de todos los colores y formas.</li>
-            <li data-i18n="acceptedQuick9">Vidrio plano sin quebrar (como ventanas; no parabrisas).</li>
-            <li data-i18n="acceptedQuick10">Bolsas plásticas.</li>
-            <li data-i18n="acceptedQuick11">Latas de aluminio (cervezas y refrescos).</li>
-          </ul>
         </div>
 
         <div class="materials-grid">
@@ -609,7 +598,7 @@
         <p data-i18n="eventsIntro">Actividades ambientales, educativas y comunitarias para participar, aprender y apoyar.</p>
       </div>
 
-      <article class="event-announcement">
+      <article class="event-announcement" data-event-end="2026-10-31">
         <div class="announcement-date" data-i18n-aria="eventAllOctoberAria" aria-label="Durante todo octubre">
           <strong data-i18n="eventAll">TODO</strong>
           <span data-i18n="eventOctober">OCTUBRE</span>
@@ -625,7 +614,7 @@
       </article>
 
       <div class="event-grid">
-        <article class="event-card">
+        <article class="event-card" data-event-end="2026-10-23">
           <time datetime="2026-10-23"><strong>23</strong><span>OCT</span></time>
           <div>
             <span class="tag" data-i18n="event1Tag">Conservación</span>
@@ -642,7 +631,7 @@
           </div>
         </article>
 
-        <article class="event-card">
+        <article class="event-card" data-event-end="2026-10-27">
           <time datetime="2026-10-27"><strong>27</strong><span>OCT</span></time>
           <div>
             <span class="tag" data-i18n="event2Tag">Educación ambiental</span>
@@ -658,7 +647,7 @@
           </div>
         </article>
 
-        <article class="event-card">
+        <article class="event-card" data-event-end="2026-10-30">
           <time datetime="2026-10-30"><strong>30</strong><span>OCT</span></time>
           <div>
             <span class="tag" data-i18n="event3Tag">Bienestar animal</span>
@@ -732,6 +721,7 @@
     <div class="footer-info">
       <p data-i18n="footerProject">Proyecto comunitario independiente · Sámara, Guanacaste · Costa Rica</p>
       <p><span data-i18n="contactLabel">Contacto</span>: <a href="mailto:samaralimpia@gmail.com">samaralimpia@gmail.com</a></p>
+      <p><a class="report-update-link" href="mailto:samaralimpia@gmail.com?subject=Actualizaci%C3%B3n%20para%20S%C3%A1mara%20Limpia" data-i18n="reportUpdate">Reportar una actualización ↗</a></p>
     </div>
     <nav aria-label="Enlaces del pie">
       <a href="#guia" data-i18n="footerGuide">Guía</a>

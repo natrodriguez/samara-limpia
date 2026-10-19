@@ -104,6 +104,18 @@ const translations = {
 
 Object.assign(translations.es, {
 
+  acceptedQuick1:'Cartón.',
+  acceptedQuick2:'Papel (de cuadernos, libros y revistas).',
+  acceptedQuick3:'Envases Tetra Pak (como de leche y jugos).',
+  acceptedQuick4:'Envases plásticos con símbolo PET de cualquier número.',
+  acceptedQuick5:'Botellas plásticas.',
+  acceptedQuick6:'Latón (como latas de atún).',
+  acceptedQuick7:'Latas de pintura vacías y secas.',
+  acceptedQuick8:'Botellas de vidrio de todos los colores y formas.',
+  acceptedQuick9:'Vidrio plano sin quebrar (como ventanas; no parabrisas).',
+  acceptedQuick10:'Bolsas plásticas.',
+  acceptedQuick11:'Latas de aluminio (cervezas y refrescos).',
+
   eventAllOctoberAria:'Durante todo octubre',
   eventAll:'TODO',
   eventOctober:'OCTUBRE',
@@ -344,6 +356,18 @@ Object.assign(translations.es, {
 });
 
 Object.assign(translations.en, {
+
+  acceptedQuick1:'Cardboard.',
+  acceptedQuick2:'Paper (from notebooks, books and magazines).',
+  acceptedQuick3:'Tetra Pak containers (such as milk and juice cartons).',
+  acceptedQuick4:'Plastic containers with a PET recycling symbol, any number.',
+  acceptedQuick5:'Plastic bottles.',
+  acceptedQuick6:'Metal cans (such as tuna cans).',
+  acceptedQuick7:'Empty, dry paint cans.',
+  acceptedQuick8:'Glass bottles of all colors and shapes.',
+  acceptedQuick9:'Unbroken flat glass (such as windows; no windshields).',
+  acceptedQuick10:'Plastic bags.',
+  acceptedQuick11:'Aluminum cans (beer and soft drink cans).',
 
   eventAllOctoberAria:'Throughout October',
   eventAll:'ALL',

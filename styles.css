@@ -1522,3 +1522,24 @@ h3 { margin: 0 0 8px; font-size: 1.25rem; }
     border-radius: 28px;
   }
 }
+
+.freshness-note {
+  display: block;
+  margin-top: 10px;
+  font-size: .78rem;
+  line-height: 1.35;
+  color: rgba(18,61,53,.68);
+}
+
+.schedule-card .freshness-note,
+.recycling-schedule .freshness-note {
+  color: rgba(18,61,53,.72);
+}
+
+.trust-note {
+  max-width: 58ch;
+  margin: 5px 0;
+  font-size: .82rem;
+  line-height: 1.45;
+  color: rgba(255,255,255,.78);
+}

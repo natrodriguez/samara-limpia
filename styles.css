@@ -422,7 +422,7 @@ h3 { margin: 0 0 8px; font-size: 1.25rem; }
   margin-bottom: 8px;
 }
 
-.community-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+.community-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; }
 .community-card {
   padding: 24px;
   border-radius: 22px;

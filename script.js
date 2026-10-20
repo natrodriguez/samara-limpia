@@ -443,7 +443,11 @@ Object.assign(translations.es, {
   pataText:'Rescate, bienestar y adopción animal.',
   adiText:'Desarrollo e iniciativas comunitarias.',
   crearText:'Educación y programas para niños y jóvenes.',
-  monosVivosText:'Haciendo que Sámara sea un lugar más seguro para los monos y otros animales salvajes. 🐒'
+  monosVivosText:'Haciendo que Sámara sea un lugar más seguro para los monos y otros animales salvajes. 🐒',
+  communitySpotlight:'Persona de la comunidad',
+  chiloText:'Cada mañana, Don Chilo recorre la playa y las calles de Sámara recogiendo residuos. No recibe un salario por esta labor; se sostiene con contribuciones voluntarias de vecinos, comercios y personas que valoran su trabajo.',
+  chiloSupport:'Si quieres apoyarlo, puedes hacerle una contribución directamente cuando lo veas trabajando por Sámara.',
+  altChilo:'Ilustración de Don Cecilio Chilo García con su carreta de limpieza'
 });
 
 
@@ -718,7 +722,11 @@ Object.assign(translations.en, {
   pataText:'Animal rescue, welfare and adoption.',
   adiText:'Community development and local initiatives.',
   crearText:'Education and programs for children and young people.',
-  monosVivosText:'Making Sámara safer for monkeys and other wildlife. 🐒'
+  monosVivosText:'Making Sámara safer for monkeys and other wildlife. 🐒',
+  communitySpotlight:'Community spotlight',
+  chiloText:'Every morning, Don Chilo walks the beach and streets of Sámara collecting waste. He does not receive a salary for this work and relies on voluntary contributions from neighbors, local businesses, and people who value what he does.',
+  chiloSupport:'If you’d like to support him, you can give him a contribution directly when you see him working around Sámara.',
+  altChilo:'Illustration of Don Cecilio Chilo García with his cleanup cart'
 });
 
 const finderMessages = {

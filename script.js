@@ -454,8 +454,8 @@ Object.assign(translations.es, {
   monosVivosVolunteer:'Voluntariado / contacto',
   monosVivosDonate:'Donar',
   communitySpotlight:'Persona de la comunidad',
-  chiloText:'Cada mañana, Don Chilo recorre la playa y las calles de Sámara recogiendo residuos. No recibe un salario por esta labor; se sostiene con contribuciones voluntarias de vecinos, comercios y personas que valoran su trabajo.',
-  chiloSupport:'Si quieres apoyarlo, puedes hacerle una contribución directamente cuando lo veas trabajando por Sámara.',
+  chiloText:'Cada mañana, Don Chilo recorre la playa y las calles de Sámara recogiendo residuos. Desde hace años, su constancia y cuidado ayudan a mantener Sámara más limpia para la comunidad, quienes nos visitan y la vida silvestre.',
+  chiloSupport:'Gracias, Don Chilo, por tantos años cuidando Sámara.',
   altChilo:'Ilustración de Don Cecilio Chilo García con su carreta de limpieza'
 });
 
@@ -742,8 +742,8 @@ Object.assign(translations.en, {
   monosVivosVolunteer:'Volunteer / contact',
   monosVivosDonate:'Donate',
   communitySpotlight:'Community spotlight',
-  chiloText:'Every morning, Don Chilo walks the beach and streets of Sámara collecting waste. He does not receive a salary for this work and relies on voluntary contributions from neighbors, local businesses, and people who value what he does.',
-  chiloSupport:'If you’d like to support him, you can give him a contribution directly when you see him working around Sámara.',
+  chiloText:'Every morning, Don Chilo walks the beach and streets of Sámara collecting waste. For years, his consistency and care have helped keep Sámara cleaner for the community, visitors and local wildlife.',
+  chiloSupport:'Thank you, Don Chilo, for so many years of caring for Sámara.',
   altChilo:'Illustration of Don Cecilio Chilo García with his cleanup cart'
 });
 

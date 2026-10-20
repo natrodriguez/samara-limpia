@@ -487,6 +487,33 @@ h3 { margin: 0 0 8px; font-size: 1.25rem; }
   margin-top: 14px;
   font-weight: 800;
 }
+.community-program-card {
+  cursor: default;
+}
+.community-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+.community-actions a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 9px 12px;
+  border-radius: 999px;
+  background: var(--paper);
+  border: 1px solid rgba(18,61,53,.18);
+  color: var(--ocean);
+  font-size: .82rem;
+  font-weight: 850;
+  text-decoration: none;
+}
+.community-actions a:hover,
+.community-actions a:focus-visible {
+  border-color: rgba(8,121,167,.45);
+  background: var(--recycle-soft);
+}
 
 .social {
   display: grid;

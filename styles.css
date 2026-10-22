@@ -900,8 +900,8 @@ h3 { margin: 0 0 8px; font-size: 1.25rem; }
 }
 .materials-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
 }
 .material-card {
   margin: 0;

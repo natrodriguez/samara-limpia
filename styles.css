@@ -821,6 +821,9 @@ h3 { margin: 0 0 8px; font-size: 1.25rem; }
   min-height: 320px;
 }
 .materials-block,
+.process-end {
+  margin-top: 64px;
+}
 .ecoins-panel {
   display: grid;
   grid-template-columns: minmax(280px, 1fr) minmax(360px, 1.2fr);
@@ -900,8 +903,8 @@ h3 { margin: 0 0 8px; font-size: 1.25rem; }
 }
 .materials-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 18px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
 }
 .material-card {
   margin: 0;

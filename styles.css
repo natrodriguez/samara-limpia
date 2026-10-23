@@ -841,6 +841,13 @@ h3 { margin: 0 0 8px; font-size: 1.25rem; }
 .ecoins-copy > p:not(.eyebrow) {
   max-width: 680px;
 }
+.ecoins-steps {
+  margin: 16px 0 14px;
+  padding-left: 1.25rem;
+}
+.ecoins-steps li {
+  margin: 7px 0;
+}
 .ecoins-note {
   font-size: .9rem;
   color: rgba(18,61,53,.72);
@@ -868,6 +875,20 @@ h3 { margin: 0 0 8px; font-size: 1.25rem; }
 .ecoins-rates small {
   margin-top: 6px;
   line-height: 1.25;
+}
+.resin-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  margin-left: 3px;
+  padding: 2px 6px;
+  border-radius: 999px;
+  background: var(--recycle-soft);
+  border: 1px solid #b9dddd;
+  color: var(--ocean);
+  font-size: .76rem;
+  font-weight: 900;
+  white-space: nowrap;
 }
 .ecoin-badge {
   display: inline-flex;

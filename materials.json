@@ -1,0 +1,1121 @@
+{
+  "meta": {
+    "project": "Sámara Limpia",
+    "version": 1,
+    "updated": "2026-10-24",
+    "languages": [
+      "es",
+      "en"
+    ],
+    "status_note_es": "Busca needs_research: true para encontrar materiales cuya solución local en Sámara/Nicoya todavía debe confirmarse.",
+    "status_note_en": "Search for needs_research: true to find materials whose local Sámara/Nicoya solution still needs confirmation."
+  },
+  "materials": [
+    {
+      "id": "cat-litter",
+      "name_es": "Arena de gato",
+      "name_en": "Cat litter",
+      "aliases_es": [
+        "arena sanitaria",
+        "arena para gatos",
+        "arena de gatos"
+      ],
+      "aliases_en": [
+        "kitty litter",
+        "cat litter"
+      ],
+      "category": "ordinary",
+      "route_es": "Basura ordinaria",
+      "route_en": "Ordinary trash",
+      "guidance_type": "universal",
+      "answer_es": "Coloca la arena usada y los desechos en una bolsa bien cerrada y deposítala con la basura ordinaria.",
+      "answer_en": "Place used litter and waste in a tightly tied bag and put it with ordinary trash.",
+      "warning_es": "Nunca la tires por el inodoro ni por un desagüe, incluso si el producto dice que es “desechable por el inodoro”.",
+      "warning_en": "Never flush it down the toilet or drain, even if the product is labeled “flushable.”",
+      "needs_research": false
+    },
+    {
+      "id": "pet-waste",
+      "name_es": "Heces de mascotas",
+      "name_en": "Pet waste",
+      "aliases_es": [
+        "heces de perro",
+        "heces de gato",
+        "caca de perro",
+        "caca de gato"
+      ],
+      "aliases_en": [
+        "dog poop",
+        "cat poop",
+        "pet feces"
+      ],
+      "category": "ordinary",
+      "route_es": "Basura ordinaria",
+      "route_en": "Ordinary trash",
+      "guidance_type": "universal",
+      "answer_es": "Recoge los desechos, colócalos en una bolsa bien cerrada y deposítalos con la basura ordinaria.",
+      "answer_en": "Bag the waste securely and place it with ordinary trash.",
+      "warning_es": "No lo tires por el inodoro ni lo mezcles con reciclaje.",
+      "warning_en": "Do not flush it or mix it with recycling.",
+      "needs_research": false
+    },
+    {
+      "id": "diapers",
+      "name_es": "Pañales",
+      "name_en": "Diapers",
+      "aliases_es": [
+        "pañales desechables"
+      ],
+      "aliases_en": [
+        "disposable diapers",
+        "nappies"
+      ],
+      "category": "ordinary",
+      "route_es": "Basura ordinaria",
+      "route_en": "Ordinary trash",
+      "guidance_type": "universal",
+      "answer_es": "Ciérralos bien dentro de una bolsa y deposítalos con la basura ordinaria.",
+      "answer_en": "Seal them securely in a bag and place them with ordinary trash.",
+      "needs_research": false
+    },
+    {
+      "id": "wet-wipes",
+      "name_es": "Toallitas húmedas",
+      "name_en": "Wet wipes",
+      "aliases_es": [
+        "toallitas desechables",
+        "wipes"
+      ],
+      "aliases_en": [
+        "wipes",
+        "baby wipes"
+      ],
+      "category": "ordinary",
+      "route_es": "Basura ordinaria",
+      "route_en": "Ordinary trash",
+      "guidance_type": "universal",
+      "answer_es": "Deposítalas con la basura ordinaria.",
+      "answer_en": "Place them with ordinary trash.",
+      "warning_es": "Nunca las tires por el inodoro, aunque digan que son “flushable”.",
+      "warning_en": "Never flush them, even if labeled “flushable.”",
+      "needs_research": false
+    },
+    {
+      "id": "broken-glass",
+      "name_es": "Vidrio quebrado",
+      "name_en": "Broken glass",
+      "aliases_es": [
+        "vidrio roto",
+        "botella quebrada",
+        "botella rota"
+      ],
+      "aliases_en": [
+        "broken bottle",
+        "broken glass bottle"
+      ],
+      "category": "ordinary",
+      "route_es": "Basura ordinaria",
+      "route_en": "Ordinary trash",
+      "guidance_type": "local",
+      "answer_es": "Envuelve bien los fragmentos en cartón, colócalos dentro de una bolsa, rotúlala claramente “VIDRIO” y ponla con la basura ordinaria.",
+      "answer_en": "Wrap the pieces securely in cardboard, place them in a bag, label it clearly “VIDRIO,” and put it with ordinary trash.",
+      "warning_es": "No se acepta con el reciclaje.",
+      "warning_en": "It is not accepted with recycling.",
+      "needs_research": false
+    },
+    {
+      "id": "glass-bottles",
+      "name_es": "Botellas y envases de vidrio",
+      "name_en": "Glass bottles and containers",
+      "aliases_es": [
+        "botellas de vidrio",
+        "frascos de vidrio"
+      ],
+      "aliases_en": [
+        "glass bottles",
+        "glass jars"
+      ],
+      "category": "recycling",
+      "route_es": "Reciclaje",
+      "route_en": "Recycling",
+      "guidance_type": "local",
+      "answer_es": "Entrégalos enteros, limpios, secos, sin tapa y sin etiqueta.",
+      "answer_en": "Deliver them intact, clean, dry, without caps or labels.",
+      "ecoins": {
+        "amount": 15,
+        "unit_es": "por unidad",
+        "unit_en": "per item"
+      },
+      "needs_research": false
+    },
+    {
+      "id": "flat-glass",
+      "name_es": "Vidrio plano",
+      "name_en": "Flat glass",
+      "aliases_es": [
+        "vidrio de ventana",
+        "ventana de vidrio"
+      ],
+      "aliases_en": [
+        "window glass",
+        "flat window glass"
+      ],
+      "category": "recycling",
+      "route_es": "Reciclaje si está entero",
+      "route_en": "Recycling if intact",
+      "guidance_type": "local",
+      "answer_es": "El vidrio plano entero puede entregarse con reciclaje. No se aceptan parabrisas, espejos ni vidrio quebrado.",
+      "answer_en": "Intact flat glass can be recycled. Windshields, mirrors and broken glass are not accepted.",
+      "needs_research": false
+    },
+    {
+      "id": "mirror",
+      "name_es": "Espejo",
+      "name_en": "Mirror",
+      "aliases_es": [
+        "espejo roto",
+        "espejo quebrado"
+      ],
+      "aliases_en": [
+        "broken mirror"
+      ],
+      "category": "special",
+      "route_es": "No va con reciclaje",
+      "route_en": "Not recyclable",
+      "guidance_type": "mixed",
+      "answer_es": "Los espejos no se aceptan con el vidrio reciclable. Si es pequeño y está roto, protégelo para evitar cortes antes de desecharlo.",
+      "answer_en": "Mirrors are not accepted with recyclable glass. If small and broken, protect sharp edges before disposal.",
+      "needs_research": true,
+      "research_note_es": "Confirmar manejo local para espejos grandes o enteros.",
+      "research_note_en": "Confirm local handling for large or intact mirrors."
+    },
+    {
+      "id": "pet-bottles",
+      "name_es": "Botellas plásticas PET #1",
+      "name_en": "PET #1 plastic bottles",
+      "aliases_es": [
+        "botella PET",
+        "plástico 1",
+        "plástico #1"
+      ],
+      "aliases_en": [
+        "PET bottle",
+        "plastic #1",
+        "plastic 1"
+      ],
+      "category": "recycling",
+      "route_es": "Reciclaje",
+      "route_en": "Recycling",
+      "guidance_type": "local",
+      "answer_es": "Entrégalas vacías, limpias y secas. Para ecoins, retira tapa y etiqueta.",
+      "answer_en": "Deliver empty, clean and dry. For ecoins, remove cap and label.",
+      "ecoins": {
+        "amount": 15,
+        "unit_es": "por unidad",
+        "unit_en": "per item"
+      },
+      "needs_research": false
+    },
+    {
+      "id": "pet-trays",
+      "name_es": "Bandejas PET #1",
+      "name_en": "PET #1 trays",
+      "aliases_es": [
+        "bandeja de frutas",
+        "bandeja de verduras",
+        "bandeja de carne",
+        "bandeja plástico 1"
+      ],
+      "aliases_en": [
+        "fruit tray",
+        "vegetable tray",
+        "meat tray",
+        "PET tray"
+      ],
+      "category": "recycling",
+      "route_es": "Reciclaje",
+      "route_en": "Recycling",
+      "guidance_type": "local",
+      "answer_es": "Se reciben bandejas de frutas, verduras o carnes con símbolo #1 PET, limpias y secas.",
+      "answer_en": "Clean, dry fruit, vegetable or meat trays marked #1 PET are accepted.",
+      "warning_es": "No se reciben bandejas #6.",
+      "warning_en": "#6 trays are not accepted.",
+      "ecoins": {
+        "amount": 10,
+        "unit_es": "por unidad",
+        "unit_en": "per item"
+      },
+      "needs_research": false
+    },
+    {
+      "id": "hdpe-containers",
+      "name_es": "Envases HDPE #2",
+      "name_en": "HDPE #2 containers",
+      "aliases_es": [
+        "galón plástico",
+        "plástico 2",
+        "plástico #2",
+        "HDPE"
+      ],
+      "aliases_en": [
+        "HDPE",
+        "plastic #2",
+        "plastic 2",
+        "plastic jug"
+      ],
+      "category": "recycling",
+      "route_es": "Reciclaje",
+      "route_en": "Recycling",
+      "guidance_type": "local",
+      "answer_es": "Entrégalos vacíos, limpios y secos. Para ecoins, retira tapa y etiqueta.",
+      "answer_en": "Deliver empty, clean and dry. For ecoins, remove cap and label.",
+      "ecoins": {
+        "amount": 15,
+        "unit_es": "por unidad",
+        "unit_en": "per item"
+      },
+      "needs_research": false
+    },
+    {
+      "id": "pp-cups",
+      "name_es": "Tazas plásticas PP #5",
+      "name_en": "PP #5 plastic cups",
+      "aliases_es": [
+        "plástico 5",
+        "plástico #5",
+        "PP"
+      ],
+      "aliases_en": [
+        "plastic #5",
+        "plastic 5",
+        "PP cup"
+      ],
+      "category": "recycling",
+      "route_es": "Reciclaje",
+      "route_en": "Recycling",
+      "guidance_type": "local",
+      "answer_es": "Entrégalas limpias y secas.",
+      "answer_en": "Deliver clean and dry.",
+      "ecoins": {
+        "amount": 15,
+        "unit_es": "por unidad",
+        "unit_en": "per item"
+      },
+      "needs_research": false
+    },
+    {
+      "id": "plastic-caps",
+      "name_es": "Tapas plásticas",
+      "name_en": "Plastic caps",
+      "aliases_es": [
+        "tapas de botella",
+        "tapitas"
+      ],
+      "aliases_en": [
+        "bottle caps",
+        "plastic lids"
+      ],
+      "category": "recycling",
+      "route_es": "Reciclaje",
+      "route_en": "Recycling",
+      "guidance_type": "local",
+      "answer_es": "Entrégalas limpias y secas.",
+      "answer_en": "Deliver clean and dry.",
+      "ecoins": {
+        "amount": 2,
+        "unit_es": "por unidad",
+        "unit_en": "per item"
+      },
+      "needs_research": false
+    },
+    {
+      "id": "plastic-bags",
+      "name_es": "Bolsas plásticas flexibles",
+      "name_en": "Flexible plastic bags",
+      "aliases_es": [
+        "bolsas de arroz",
+        "bolsas de frijoles",
+        "bolsas de detergente",
+        "film plástico"
+      ],
+      "aliases_en": [
+        "rice bags",
+        "bean bags",
+        "detergent bags",
+        "plastic film"
+      ],
+      "category": "recycling",
+      "route_es": "Reciclaje",
+      "route_en": "Recycling",
+      "guidance_type": "local",
+      "answer_es": "Se reciben bolsas flexibles limpias y secas, como las de arroz, frijoles o detergente.",
+      "answer_en": "Clean, dry flexible plastic bags such as rice, bean or detergent bags are accepted.",
+      "warning_es": "No se reciben empaques laminados o metalizados.",
+      "warning_en": "Laminated or metallized packaging is not accepted.",
+      "ecoins": {
+        "amount": 5,
+        "unit_es": "por unidad",
+        "unit_en": "per item"
+      },
+      "needs_research": false
+    },
+    {
+      "id": "laminated-packaging",
+      "name_es": "Empaques laminados o metalizados",
+      "name_en": "Laminated or metallized packaging",
+      "aliases_es": [
+        "bolsa de snacks",
+        "bolsa de papitas",
+        "empaque metalizado",
+        "empaque de dulces"
+      ],
+      "aliases_en": [
+        "chip bag",
+        "snack bag",
+        "candy wrapper",
+        "metallized pouch"
+      ],
+      "category": "ordinary",
+      "route_es": "Basura ordinaria",
+      "route_en": "Ordinary trash",
+      "guidance_type": "mixed",
+      "answer_es": "No se aceptan con el reciclaje municipal de Nicoya.",
+      "answer_en": "They are not accepted with Nicoya municipal recycling.",
+      "needs_research": true,
+      "research_note_es": "Investigar si existe alternativa local para ecobotellas u otro programa.",
+      "research_note_en": "Research whether a local ecobottle or other recovery option exists."
+    },
+    {
+      "id": "tetrapak",
+      "name_es": "Tetra Pak",
+      "name_en": "Tetra Pak",
+      "aliases_es": [
+        "caja de leche",
+        "caja de jugo",
+        "envase tetrapak"
+      ],
+      "aliases_en": [
+        "milk carton",
+        "juice carton",
+        "aseptic carton"
+      ],
+      "category": "recycling",
+      "route_es": "Reciclaje",
+      "route_en": "Recycling",
+      "guidance_type": "local",
+      "answer_es": "Desármalo, enjuágalo, sécalo y compáctalo. Para ecoins se indica dejar la pajilla adentro y la tapa colocada.",
+      "answer_en": "Open, rinse, dry and flatten it. For ecoins, guidance says to keep the straw inside and cap on.",
+      "ecoins": {
+        "amount": 15,
+        "unit_es": "por unidad",
+        "unit_en": "per item"
+      },
+      "needs_research": false
+    },
+    {
+      "id": "aluminum-cans",
+      "name_es": "Latas y envases de aluminio",
+      "name_en": "Aluminum cans and containers",
+      "aliases_es": [
+        "lata de bebida",
+        "lata de cerveza",
+        "lata de refresco",
+        "aerosol aluminio"
+      ],
+      "aliases_en": [
+        "beverage can",
+        "soda can",
+        "beer can",
+        "aluminum aerosol"
+      ],
+      "category": "recycling",
+      "route_es": "Reciclaje",
+      "route_en": "Recycling",
+      "guidance_type": "local",
+      "answer_es": "Entrégalos limpios y compactados cuando sea posible.",
+      "answer_en": "Deliver clean and compacted when possible.",
+      "warning_es": "No se acepta papel aluminio dentro de esta categoría.",
+      "warning_en": "Aluminum foil is not accepted in this category.",
+      "ecoins": {
+        "amount": 15,
+        "unit_es": "por unidad",
+        "unit_en": "per item"
+      },
+      "needs_research": false
+    },
+    {
+      "id": "tin-cans",
+      "name_es": "Hojalata / latón",
+      "name_en": "Tin / steel cans",
+      "aliases_es": [
+        "lata de atún",
+        "lata de frijoles",
+        "lata metálica"
+      ],
+      "aliases_en": [
+        "tuna can",
+        "steel can",
+        "food can"
+      ],
+      "category": "recycling",
+      "route_es": "Reciclaje",
+      "route_en": "Recycling",
+      "guidance_type": "local",
+      "answer_es": "Por ejemplo, latas de atún. Retira la tapa e introdúcela dentro del envase.",
+      "answer_en": "For example, tuna cans. Remove the lid and place it inside the can.",
+      "ecoins": {
+        "amount": 15,
+        "unit_es": "por unidad",
+        "unit_en": "per item"
+      },
+      "needs_research": false
+    },
+    {
+      "id": "paper-cardboard",
+      "name_es": "Papel y cartón",
+      "name_en": "Paper and cardboard",
+      "aliases_es": [
+        "cajas de cartón",
+        "papel de oficina",
+        "revistas",
+        "periódicos",
+        "libros",
+        "cuadernos"
+      ],
+      "aliases_en": [
+        "cardboard boxes",
+        "office paper",
+        "magazines",
+        "newspapers",
+        "books",
+        "notebooks"
+      ],
+      "category": "recycling",
+      "route_es": "Reciclaje",
+      "route_en": "Recycling",
+      "guidance_type": "local",
+      "answer_es": "Entrégalos limpios, secos y libres de grasa.",
+      "answer_en": "Deliver clean, dry and free of grease.",
+      "ecoins": {
+        "amount": 150,
+        "unit_es": "por kilo",
+        "unit_en": "per kilogram"
+      },
+      "needs_research": false
+    },
+    {
+      "id": "dirty-pizza-box",
+      "name_es": "Caja de pizza sucia",
+      "name_en": "Greasy pizza box",
+      "aliases_es": [
+        "caja de pizza grasosa"
+      ],
+      "aliases_en": [
+        "dirty pizza box",
+        "greasy cardboard"
+      ],
+      "category": "ordinary",
+      "route_es": "Basura ordinaria",
+      "route_en": "Ordinary trash",
+      "guidance_type": "local",
+      "answer_es": "Si está sucia o grasosa, no va con el reciclaje.",
+      "answer_en": "If dirty or greasy, it does not belong in recycling.",
+      "needs_research": false
+    },
+    {
+      "id": "styrofoam",
+      "name_es": "Estereofón",
+      "name_en": "Styrofoam / expanded polystyrene",
+      "aliases_es": [
+        "espuma de empaque",
+        "poliestireno expandido",
+        "foam"
+      ],
+      "aliases_en": [
+        "foam",
+        "EPS",
+        "polystyrene foam"
+      ],
+      "category": "ordinary",
+      "route_es": "Basura ordinaria",
+      "route_en": "Ordinary trash",
+      "guidance_type": "local",
+      "answer_es": "No se acepta con el reciclaje municipal de Sámara/Nicoya.",
+      "answer_en": "It is not accepted with Sámara/Nicoya municipal recycling.",
+      "needs_research": false
+    },
+    {
+      "id": "food-scraps",
+      "name_es": "Restos de comida",
+      "name_en": "Food scraps",
+      "aliases_es": [
+        "sobras de comida",
+        "residuos de cocina",
+        "cáscaras"
+      ],
+      "aliases_en": [
+        "food waste",
+        "kitchen scraps",
+        "peels"
+      ],
+      "category": "organic",
+      "route_es": "Compostaje doméstico o manejo local",
+      "route_en": "Home composting or local handling",
+      "guidance_type": "local",
+      "answer_es": "Sámara no cuenta con recolección municipal de compost. Si puedes, composta en casa los residuos apropiados.",
+      "answer_en": "Sámara does not have municipal compost collection. Compost suitable scraps at home when possible.",
+      "needs_research": true,
+      "research_note_es": "Definir qué recomendar para hogares sin compostaje y si existen iniciativas locales.",
+      "research_note_en": "Define guidance for homes without composting and identify any local initiatives."
+    },
+    {
+      "id": "yard-waste",
+      "name_es": "Ramas, hojas y podas",
+      "name_en": "Branches, leaves and yard trimmings",
+      "aliases_es": [
+        "residuos de jardín",
+        "zacate",
+        "césped",
+        "hojas de palma",
+        "ramas"
+      ],
+      "aliases_en": [
+        "yard waste",
+        "garden waste",
+        "grass clippings",
+        "palm fronds",
+        "branches"
+      ],
+      "category": "organic",
+      "route_es": "Manejo de jardín / alternativa local",
+      "route_en": "Yard handling / local alternative",
+      "guidance_type": "local",
+      "answer_es": "No deben mezclarse con reciclaje. Para cantidades pequeñas puede considerarse compostaje o mulch según el material.",
+      "answer_en": "Do not mix with recycling. Small amounts may be suitable for compost or mulch depending on the material.",
+      "needs_research": true,
+      "research_note_es": "Investigar opciones locales para grandes cantidades de poda y troncos.",
+      "research_note_en": "Research local options for large amounts of trimmings and logs."
+    },
+    {
+      "id": "cooking-oil",
+      "name_es": "Aceite de cocina usado",
+      "name_en": "Used cooking oil",
+      "aliases_es": [
+        "aceite vegetal usado",
+        "aceite de freír",
+        "grasa de cocina"
+      ],
+      "aliases_en": [
+        "used vegetable oil",
+        "frying oil",
+        "cooking grease"
+      ],
+      "category": "special",
+      "route_es": "Manejo especial",
+      "route_en": "Special handling",
+      "guidance_type": "mixed",
+      "answer_es": "Déjalo enfriar y guárdalo en una botella o recipiente cerrado. No lo viertas en el fregadero, inodoro, suelo ni alcantarillas.",
+      "answer_en": "Let it cool and store it in a sealed bottle or container. Do not pour it into sinks, toilets, soil or drains.",
+      "needs_research": true,
+      "research_note_es": "Buscar punto de recepción o reutilización en Sámara/Nicoya.",
+      "research_note_en": "Find a collection or reuse option in Sámara/Nicoya."
+    },
+    {
+      "id": "motor-oil",
+      "name_es": "Aceite de motor usado",
+      "name_en": "Used motor oil",
+      "aliases_es": [
+        "aceite de carro",
+        "aceite automotriz",
+        "aceite de motor"
+      ],
+      "aliases_en": [
+        "car oil",
+        "engine oil",
+        "automotive oil"
+      ],
+      "category": "hazardous",
+      "route_es": "Residuo peligroso / manejo especial",
+      "route_en": "Hazardous / special handling",
+      "guidance_type": "mixed",
+      "answer_es": "Guárdalo en un recipiente cerrado y no lo mezcles con agua u otras sustancias. No lo viertas en suelo, drenajes ni basura.",
+      "answer_en": "Keep it in a sealed container and do not mix it with water or other substances. Never pour it onto soil, into drains or trash.",
+      "needs_research": true,
+      "research_note_es": "Confirmar talleres o puntos autorizados en Sámara/Nicoya.",
+      "research_note_en": "Confirm authorized garages or collection points in Sámara/Nicoya."
+    },
+    {
+      "id": "mattress",
+      "name_es": "Colchón",
+      "name_en": "Mattress",
+      "aliases_es": [
+        "colchón viejo",
+        "base de colchón",
+        "box spring"
+      ],
+      "aliases_en": [
+        "old mattress",
+        "box spring"
+      ],
+      "category": "bulky",
+      "route_es": "Residuo voluminoso",
+      "route_en": "Bulky waste",
+      "guidance_type": "local",
+      "answer_es": "No lo dejes junto a un punto de basura esperando que lo recojan.",
+      "answer_en": "Do not leave it beside a trash collection point expecting pickup.",
+      "needs_research": true,
+      "research_note_es": "Identificar recolectores o puntos responsables que reciban colchones en Sámara/Nicoya.",
+      "research_note_en": "Identify responsible collectors or drop-off points for mattresses in Sámara/Nicoya."
+    },
+    {
+      "id": "furniture",
+      "name_es": "Muebles",
+      "name_en": "Furniture",
+      "aliases_es": [
+        "sofá",
+        "sillón",
+        "mesa vieja",
+        "silla vieja",
+        "mueble viejo"
+      ],
+      "aliases_en": [
+        "sofa",
+        "couch",
+        "old table",
+        "old chair",
+        "old furniture"
+      ],
+      "category": "bulky",
+      "route_es": "Residuo voluminoso / reusar primero",
+      "route_en": "Bulky waste / reuse first",
+      "guidance_type": "mixed",
+      "answer_es": "Si todavía sirve, prioriza donación o reutilización. Si no, necesita una ruta de recolección responsable.",
+      "answer_en": "If still usable, prioritize donation or reuse. Otherwise it needs responsible bulky-waste collection.",
+      "needs_research": true,
+      "research_note_es": "Crear directorio local de donación/recolección.",
+      "research_note_en": "Build a local donation/collection directory."
+    },
+    {
+      "id": "clothing",
+      "name_es": "Ropa",
+      "name_en": "Clothing",
+      "aliases_es": [
+        "ropa usada",
+        "ropa vieja",
+        "zapatos",
+        "sábanas",
+        "cobijas"
+      ],
+      "aliases_en": [
+        "used clothes",
+        "old clothes",
+        "shoes",
+        "sheets",
+        "blankets"
+      ],
+      "category": "reuse",
+      "route_es": "Reusar / donar",
+      "route_en": "Reuse / donate",
+      "guidance_type": "mixed",
+      "answer_es": "Si está limpia y en buen estado, prioriza reutilización o donación.",
+      "answer_en": "If clean and in good condition, prioritize reuse or donation.",
+      "needs_research": true,
+      "research_note_es": "Agregar puntos y organizaciones locales que reciban textiles.",
+      "research_note_en": "Add local organizations or drop-off points that accept textiles."
+    },
+    {
+      "id": "electronics",
+      "name_es": "Aparatos eléctricos y electrónicos",
+      "name_en": "Electrical and electronic devices",
+      "aliases_es": [
+        "electrónicos",
+        "RAEE",
+        "electrodomésticos pequeños",
+        "aparato eléctrico"
+      ],
+      "aliases_en": [
+        "electronics",
+        "e-waste",
+        "WEEE",
+        "small appliances"
+      ],
+      "category": "raee",
+      "route_es": "RAEE / puntos autorizados",
+      "route_en": "E-waste / authorized points",
+      "guidance_type": "local",
+      "answer_es": "Entrégalos completos y armados en un punto RAEE participante. En la sección de Residuos especiales puedes ver opciones cercanas.",
+      "answer_en": "Take complete, assembled items to a participating e-waste collection point. See nearby options in Special Waste.",
+      "ecoins": {
+        "amount": 150,
+        "unit_es": "por unidad aceptada",
+        "unit_en": "per accepted item"
+      },
+      "needs_research": false
+    },
+    {
+      "id": "cell-phone",
+      "name_es": "Celular",
+      "name_en": "Cell phone",
+      "aliases_es": [
+        "teléfono celular",
+        "móvil",
+        "smartphone"
+      ],
+      "aliases_en": [
+        "mobile phone",
+        "smartphone"
+      ],
+      "category": "raee",
+      "route_es": "RAEE",
+      "route_en": "E-waste",
+      "guidance_type": "local",
+      "answer_es": "Puede llevarse a puntos RAEE participantes como agencias ICE Kölbi y otros comercios indicados en la sección de Residuos especiales.",
+      "answer_en": "It can be taken to participating e-waste points such as ICE Kölbi agencies and other businesses listed under Special Waste.",
+      "ecoins": {
+        "amount": 150,
+        "unit_es": "por unidad aceptada",
+        "unit_en": "per accepted item"
+      },
+      "needs_research": false
+    },
+    {
+      "id": "computer",
+      "name_es": "Computadora",
+      "name_en": "Computer",
+      "aliases_es": [
+        "laptop",
+        "portátil",
+        "computadora de escritorio",
+        "monitor"
+      ],
+      "aliases_en": [
+        "laptop",
+        "desktop computer",
+        "monitor"
+      ],
+      "category": "raee",
+      "route_es": "RAEE",
+      "route_en": "E-waste",
+      "guidance_type": "local",
+      "answer_es": "Llévala completa a un punto RAEE participante en Nicoya o zonas cercanas.",
+      "answer_en": "Take it complete to a participating e-waste collection point in Nicoya or nearby.",
+      "ecoins": {
+        "amount": 150,
+        "unit_es": "por unidad aceptada",
+        "unit_en": "per accepted item"
+      },
+      "needs_research": false
+    },
+    {
+      "id": "refrigerator",
+      "name_es": "Refrigeradora",
+      "name_en": "Refrigerator",
+      "aliases_es": [
+        "nevera",
+        "refri"
+      ],
+      "aliases_en": [
+        "fridge"
+      ],
+      "category": "raee",
+      "route_es": "RAEE / electrodoméstico grande",
+      "route_en": "E-waste / large appliance",
+      "guidance_type": "local",
+      "answer_es": "La Curacao, Coopeguanacaste y Gollo figuran entre los puntos cercanos que reciben refrigeración y línea blanca. Confirma antes de llevarla.",
+      "answer_en": "La Curacao, Coopeguanacaste and Gollo are among nearby points listed for refrigeration and large appliances. Confirm before drop-off.",
+      "ecoins": {
+        "amount": 150,
+        "unit_es": "por unidad aceptada",
+        "unit_en": "per accepted item"
+      },
+      "needs_research": false
+    },
+    {
+      "id": "air-conditioner",
+      "name_es": "Aire acondicionado",
+      "name_en": "Air conditioner",
+      "aliases_es": [
+        "unidad de aire acondicionado",
+        "AC"
+      ],
+      "aliases_en": [
+        "AC unit"
+      ],
+      "category": "raee",
+      "route_es": "RAEE / refrigeración",
+      "route_en": "E-waste / refrigeration",
+      "guidance_type": "local",
+      "answer_es": "Algunos puntos RAEE cercanos reciben equipos de aire acondicionado. Confirma condiciones antes de transportarlo.",
+      "answer_en": "Some nearby e-waste points accept air-conditioning equipment. Confirm conditions before transporting it.",
+      "ecoins": {
+        "amount": 150,
+        "unit_es": "por unidad aceptada",
+        "unit_en": "per accepted item"
+      },
+      "needs_research": false
+    },
+    {
+      "id": "batteries-small",
+      "name_es": "Pilas y baterías pequeñas",
+      "name_en": "Small batteries",
+      "aliases_es": [
+        "pilas AA",
+        "pilas AAA",
+        "batería de litio",
+        "pila botón"
+      ],
+      "aliases_en": [
+        "AA batteries",
+        "AAA batteries",
+        "lithium battery",
+        "button cell"
+      ],
+      "category": "hazardous",
+      "route_es": "Manejo especial",
+      "route_en": "Special handling",
+      "guidance_type": "mixed",
+      "answer_es": "No las mezcles con reciclaje común. Las baterías de litio pueden provocar incendios si se dañan o compactan.",
+      "answer_en": "Do not mix them with regular recycling. Lithium batteries can cause fires if damaged or compacted.",
+      "needs_research": true,
+      "research_note_es": "Confirmar puntos de recepción locales para pilas y baterías.",
+      "research_note_en": "Confirm local battery collection points."
+    },
+    {
+      "id": "car-battery",
+      "name_es": "Batería de carro",
+      "name_en": "Car battery",
+      "aliases_es": [
+        "batería automotriz",
+        "batería ácido plomo"
+      ],
+      "aliases_en": [
+        "automotive battery",
+        "lead-acid battery"
+      ],
+      "category": "hazardous",
+      "route_es": "Residuo peligroso",
+      "route_en": "Hazardous waste",
+      "guidance_type": "mixed",
+      "answer_es": "No la deseches con basura ordinaria ni reciclaje. Debe entregarse a un punto o gestor que maneje baterías de ácido-plomo.",
+      "answer_en": "Do not place it in ordinary trash or recycling. Take it to a point or manager that handles lead-acid batteries.",
+      "needs_research": true,
+      "research_note_es": "Confirmar talleres o comercios de Nicoya/Sámara que las reciban.",
+      "research_note_en": "Confirm garages or businesses in Nicoya/Sámara that accept them."
+    },
+    {
+      "id": "tires",
+      "name_es": "Llantas",
+      "name_en": "Tires",
+      "aliases_es": [
+        "neumáticos",
+        "llantas usadas"
+      ],
+      "aliases_en": [
+        "used tires",
+        "tyres"
+      ],
+      "category": "special",
+      "route_es": "Manejo especial",
+      "route_en": "Special handling",
+      "guidance_type": "local",
+      "answer_es": "No se reciben actualmente en el centro municipal de Nicoya según la información disponible. ecoins indica puntos en otros cantones de Guanacaste.",
+      "answer_en": "They are not currently listed as accepted at the Nicoya municipal center. ecoins lists collection points in other Guanacaste cantons.",
+      "needs_research": true,
+      "research_note_es": "Verificar si existe una opción más cercana en Sámara o Nicoya.",
+      "research_note_en": "Check whether a closer option now exists in Sámara or Nicoya."
+    },
+    {
+      "id": "paint",
+      "name_es": "Pintura",
+      "name_en": "Paint",
+      "aliases_es": [
+        "pintura sobrante",
+        "lata de pintura",
+        "pintura vieja"
+      ],
+      "aliases_en": [
+        "leftover paint",
+        "paint can",
+        "old paint"
+      ],
+      "category": "hazardous",
+      "route_es": "Manejo especial",
+      "route_en": "Special handling",
+      "guidance_type": "mixed",
+      "answer_es": "La pintura líquida o con residuos peligrosos no debe verterse al suelo ni a desagües.",
+      "answer_en": "Liquid paint or paint containing hazardous residues should never be poured onto soil or into drains.",
+      "needs_research": true,
+      "research_note_es": "Confirmar opción local para pintura sobrante. Las latas completamente vacías y secas pueden tener otra ruta.",
+      "research_note_en": "Confirm local option for leftover paint. Completely empty, dry cans may follow another route."
+    },
+    {
+      "id": "fluorescent-bulbs",
+      "name_es": "Bombillos y tubos fluorescentes",
+      "name_en": "Fluorescent bulbs and tubes",
+      "aliases_es": [
+        "tubo fluorescente",
+        "CFL",
+        "bombillo fluorescente"
+      ],
+      "aliases_en": [
+        "fluorescent tube",
+        "CFL bulb"
+      ],
+      "category": "hazardous",
+      "route_es": "Manejo especial",
+      "route_en": "Special handling",
+      "guidance_type": "mixed",
+      "answer_es": "No los rompas ni los mezcles con vidrio reciclable; pueden contener mercurio.",
+      "answer_en": "Do not break them or mix them with recyclable glass; they may contain mercury.",
+      "needs_research": true,
+      "research_note_es": "Confirmar punto de recepción en Nicoya/Sámara.",
+      "research_note_en": "Confirm collection point in Nicoya/Sámara."
+    },
+    {
+      "id": "medications",
+      "name_es": "Medicamentos vencidos o sin usar",
+      "name_en": "Expired or unused medications",
+      "aliases_es": [
+        "medicinas vencidas",
+        "pastillas vencidas",
+        "blísteres"
+      ],
+      "aliases_en": [
+        "expired medicine",
+        "unused medicine",
+        "pills",
+        "blister packs"
+      ],
+      "category": "hazardous",
+      "route_es": "Punto Seguro / manejo especial",
+      "route_en": "Safe collection point / special handling",
+      "guidance_type": "mixed",
+      "answer_es": "No los tires por el inodoro ni el fregadero.",
+      "answer_en": "Do not flush them down the toilet or sink.",
+      "needs_research": true,
+      "research_note_es": "Localizar farmacias con sello Punto Seguro en Sámara/Nicoya y confirmar qué reciben.",
+      "research_note_en": "Locate Punto Seguro pharmacies in Sámara/Nicoya and confirm accepted items."
+    },
+    {
+      "id": "sharps",
+      "name_es": "Agujas y objetos punzocortantes",
+      "name_en": "Needles and sharps",
+      "aliases_es": [
+        "jeringas",
+        "agujas usadas",
+        "lancetas"
+      ],
+      "aliases_en": [
+        "syringes",
+        "used needles",
+        "lancets"
+      ],
+      "category": "hazardous",
+      "route_es": "Residuo bioinfeccioso / manejo especial",
+      "route_en": "Biohazard / special handling",
+      "guidance_type": "mixed",
+      "answer_es": "Nunca los dejes sueltos en una bolsa de basura o reciclaje.",
+      "answer_en": "Never place them loose in a trash or recycling bag.",
+      "needs_research": true,
+      "research_note_es": "Confirmar protocolo y punto de recepción local.",
+      "research_note_en": "Confirm local protocol and collection point."
+    },
+    {
+      "id": "propane-cylinder",
+      "name_es": "Cilindro o tanque de gas",
+      "name_en": "Gas or propane cylinder",
+      "aliases_es": [
+        "tanque de propano",
+        "cilindro de gas",
+        "bombona de gas"
+      ],
+      "aliases_en": [
+        "propane tank",
+        "gas cylinder"
+      ],
+      "category": "hazardous",
+      "route_es": "Manejo especial",
+      "route_en": "Special handling",
+      "guidance_type": "mixed",
+      "answer_es": "No lo pongas con basura ordinaria ni reciclaje, aunque parezca vacío.",
+      "answer_en": "Do not place it with ordinary trash or recycling, even if it appears empty.",
+      "needs_research": true,
+      "research_note_es": "Confirmar proveedores o puntos locales que reciban cilindros.",
+      "research_note_en": "Confirm local suppliers or drop-off points that accept cylinders."
+    },
+    {
+      "id": "construction-debris",
+      "name_es": "Escombros",
+      "name_en": "Construction debris",
+      "aliases_es": [
+        "residuos de construcción",
+        "concreto",
+        "bloques",
+        "ladrillos",
+        "demolición"
+      ],
+      "aliases_en": [
+        "construction waste",
+        "concrete",
+        "blocks",
+        "bricks",
+        "demolition debris"
+      ],
+      "category": "construction",
+      "route_es": "Gestor o destino autorizado",
+      "route_en": "Authorized manager or destination",
+      "guidance_type": "local",
+      "answer_es": "Los residuos de construcción y demolición deben llevarse a un gestor o instalación que pueda recibirlos legalmente.",
+      "answer_en": "Construction and demolition waste must go to a manager or facility legally able to receive it.",
+      "warning_es": "No uses escombros para rellenar humedales, cauces, lotes o terrenos no autorizados.",
+      "warning_en": "Do not use debris to fill wetlands, waterways, lots or unauthorized land.",
+      "needs_research": true,
+      "research_note_es": "Agregar recolectores/destinos locales verificados.",
+      "research_note_en": "Add verified local collectors/destinations."
+    },
+    {
+      "id": "clean-untreated-wood",
+      "name_es": "Madera limpia sin tratar",
+      "name_en": "Clean untreated wood",
+      "aliases_es": [
+        "madera natural",
+        "tablas sin pintar"
+      ],
+      "aliases_en": [
+        "natural wood",
+        "unpainted lumber"
+      ],
+      "category": "reuse",
+      "route_es": "Reusar / manejo local",
+      "route_en": "Reuse / local handling",
+      "guidance_type": "mixed",
+      "answer_es": "Si está en buen estado, prioriza reutilización. No la mezcles automáticamente con reciclaje.",
+      "answer_en": "If usable, prioritize reuse. Do not automatically mix it with recycling.",
+      "needs_research": true,
+      "research_note_es": "Identificar opciones locales para madera no reutilizable.",
+      "research_note_en": "Identify local options for non-reusable wood."
+    },
+    {
+      "id": "toys",
+      "name_es": "Juguetes",
+      "name_en": "Toys",
+      "aliases_es": [
+        "juguetes plásticos",
+        "juguetes viejos"
+      ],
+      "aliases_en": [
+        "plastic toys",
+        "old toys"
+      ],
+      "category": "reuse",
+      "route_es": "Reusar / donar si sirven",
+      "route_en": "Reuse / donate if usable",
+      "guidance_type": "mixed",
+      "answer_es": "Si funcionan y están limpios, prioriza donación o reutilización. Los juguetes plásticos sin símbolo y número de reciclaje no se aceptan con el reciclaje municipal.",
+      "answer_en": "If clean and usable, prioritize donation or reuse. Plastic toys without a recycling symbol and number are not accepted with municipal recycling.",
+      "needs_research": true,
+      "research_note_es": "Agregar opciones locales de donación y manejo de juguetes rotos.",
+      "research_note_en": "Add local donation options and handling for broken toys."
+    }
+  ]
+}
